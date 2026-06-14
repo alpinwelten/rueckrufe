@@ -118,6 +118,11 @@ function cleanTitle(link, url) {
 
 function recordFrom(hub, url, title, date) {
   const text = `${hub.source} ${title}`;
+  // Hub-Einträge stammen von Kletter-/Bergsport-/PSA-Marken. Greift kein
+  // Schlagwort (deutsche Produktnamen wie „OHMEGA", „Mega Jul", „Conecto"),
+  // wäre „Sonstiges" irreführend -> sinnvoller Default für den Hub.
+  let category = classifyCategory(text);
+  if (category === 'Sonstiges') category = hub.defaultCategory || 'Bergsport';
   const rec = {
     id: `${hub.source}:${url}`,
     source: hub.source,
@@ -129,7 +134,7 @@ function recordFrom(hub, url, title, date) {
     summary: '',
     hazard: null,
     severity: classifySeverity(text),
-    category: classifyCategory(text),
+    category,
     products: [],
     countries: ['EU'],
     sourceUrl: url,

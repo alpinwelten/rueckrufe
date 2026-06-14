@@ -89,12 +89,18 @@ const STRONG = {
     'climbing harness', 'safety harness', 'full body harness',
     'auffanggurt', 'verbindungsmittel', 'falldämpfer', 'höhensicherung', 'absturzsicherung',
     'psa gegen absturz', 'psaga', 'anschlagpunkt', 'höhensicherungsgerät', 'abseilgerät', 'auffanggurte',
+    // deutsche Produktbegriffe / Arboristik
+    'baumpflege', 'baumpflegegurt', 'd-ring', 'd ring', 'rückhaltesystem',
   ],
   Bergsport: [
     'climbing', 'mountaineering', 'via ferrata', 'belay', 'quickdraw', 'carabiner', 'karabiner',
     'crampon', 'ice axe', 'ice tool', 'piolet', 'descender', 'ascender', 'avalanche',
     'klettersteig', 'klettern', 'kletter', 'klettergurt', 'steigeisen', 'eispickel',
     'eisgerät', 'kletterseil', 'sicherungsgerät', 'expressset', 'lawine', 'lawinen', 'transceiver',
+    // Sicherungs-/Abseilgeräte & Kletter-Hardware (Modell-/Fachbegriffe)
+    'ohmega', 'mega jul', 'micro jul', 'giga jul', 'grigri', 'reverso', 'klettersteigset',
+    'hms', 'bulletproof', 'cable comfort', 'seilbremse', 'maillon', 'umlenkrolle',
+    'schraubkarabiner', 'bandschlinge', 'eisschraube',
   ],
   Arbeitssicherheit: [
     'rope access', 'industrial fall', 'scaffold', 'work at height',

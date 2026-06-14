@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T15:34:48.564Z",
+    "generatedAt": "2026-06-14T17:10:30.698Z",
     "total": 104,
     "rawTotal": 141,
     "scope": "eu-relevant",
@@ -11,7 +11,7 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 16715,
+        "ms": 18299,
         "fetched": 90
       },
       {
@@ -19,7 +19,7 @@
         "label": "Hersteller-Seiten",
         "count": 49,
         "ok": true,
-        "ms": 11094,
+        "ms": 49420,
         "fetched": 51
       },
       {
@@ -27,7 +27,7 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1291,
+        "ms": 12763,
         "fetched": 0
       }
     ],
@@ -44,10 +44,10 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 28,
-      "Sonstiges": 28,
-      "Bergsport": 44,
-      "Arbeitssicherheit": 4
+      "PSAgA": 30,
+      "Bergsport": 67,
+      "Arbeitssicherheit": 4,
+      "Sonstiges": 3
     },
     "bySeverity": {
       "high": 32,
@@ -235,7 +235,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -440,7 +440,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -608,7 +608,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -933,7 +933,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -1362,7 +1362,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -1838,7 +1838,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2230,7 +2230,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2293,7 +2293,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2322,7 +2322,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2690,7 +2690,7 @@
       "summary": "",
       "hazard": null,
       "severity": "info",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2719,7 +2719,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2748,7 +2748,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2777,7 +2777,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2806,7 +2806,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2835,7 +2835,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "PSAgA",
       "products": [],
       "countries": [
         "EU"
@@ -2864,7 +2864,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "PSAgA",
       "products": [],
       "countries": [
         "EU"
@@ -2922,7 +2922,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -2951,7 +2951,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3009,7 +3009,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3067,7 +3067,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3096,7 +3096,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3183,7 +3183,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3212,7 +3212,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3241,7 +3241,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
@@ -3270,7 +3270,7 @@
       "summary": "",
       "hazard": null,
       "severity": "medium",
-      "category": "Sonstiges",
+      "category": "Bergsport",
       "products": [],
       "countries": [
         "EU"
