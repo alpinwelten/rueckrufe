@@ -16,7 +16,7 @@ export const BRANDS = [
   { key: 'edelrid', name: 'EDELRID', home: 'https://edelrid.com/de-de', recall: 'https://edelrid.com/de-de/service/warnhinweis', aliases: ['edelrid'] },
   { key: 'petzl', name: 'Petzl', home: 'https://www.petzl.com', recall: 'https://www.petzl.com/INT/en/Professional/safety-alerts', aliases: ['petzl'] },
   { key: 'mammut', name: 'Mammut', home: 'https://www.mammut.com', recall: 'https://www.mammut.com/de/de/service/produktsicherheit', aliases: ['mammut'] },
-  { key: 'blackdiamond', name: 'Black Diamond', home: 'https://www.blackdiamondequipment.com', recall: 'https://www.blackdiamondequipment.com/en_US/recalls.html', aliases: ['black diamond', 'blackdiamond', 'black diamond equipment'] },
+  { key: 'blackdiamond', name: 'Black Diamond', home: 'https://www.blackdiamondequipment.com', recall: 'https://www.blackdiamondequipment.com/pages/product-recalls', aliases: ['black diamond', 'blackdiamond', 'black diamond equipment'] },
   { key: 'beal', name: 'Beal', home: 'https://www.beal-planet.com', recall: 'https://www.beal-planet.com', aliases: ['beal'] },
   { key: 'camp', name: 'CAMP', home: 'https://www.camp.it', recall: 'https://www.camp.it/en/safety-notice', aliases: ['camp', 'c a m p', 'camp safety'], ambiguous: true },
   { key: 'skylotec', name: 'SKYLOTEC', home: 'https://www.skylotec.com', recall: 'https://www.skylotec.com/int_de/Retouren-und-Rueckrufe/', aliases: ['skylotec'] },

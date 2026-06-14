@@ -33,12 +33,29 @@ const HUBS = [
   },
   {
     // Direkt (curl) – saubere /alerts-Liste, Datum im Slug (en + it Monatsnamen).
+    // Links stecken im JSON/Script -> Rohscan nötig.
     source: 'ClimbingTechnology', sourceLabel: 'Climbing Technology', via: 'direct',
     base: 'https://www.climbingtechnology.com',
     url: 'https://www.climbingtechnology.com/en/alerts', hostMust: 'climbingtechnology.com',
     linkRe: /\/en\/alerts\/[a-z0-9-]{4,}/i,
     slugDeny: /\/alerts\/feed\b/i,
-    dateFromSlug: true,
+    dateFromSlug: true, rawScan: true,
+  },
+  {
+    // Proxy – Rückruf-Seiten auf dem Shopify-Backend (black-diamond-na.myshopify.com).
+    source: 'BlackDiamond', sourceLabel: 'Black Diamond', via: 'proxy',
+    base: 'https://www.blackdiamondequipment.com',
+    url: 'https://www.blackdiamondequipment.com/pages/product-recalls',
+    hostMust: ['blackdiamondequipment.com', 'black-diamond-na.myshopify.com'],
+    linkRe: /\/pages\/[a-z0-9-]*recall[a-z0-9-]*/i,
+    slugDeny: /\/pages\/product-recalls\b/i,
+  },
+  {
+    // Proxy – Rückrufe als PDF auf beal-planet.com (Katalog-PDFs liegen auf cdn.shopify.com -> hostMust filtert).
+    source: 'Beal', sourceLabel: 'Beal', via: 'proxy', base: 'https://www.beal-planet.com',
+    url: 'https://www.beal-planet.com/en/pages/rappel-produits', hostMust: 'beal-planet.com',
+    linkRe: /beal-planet\.com\/[^)\s"']*\.pdf/i,
+    slugMust: /rappel|recall|inspection|tract|birdie|alert|warn/i,
   },
   {
     // Proxy – Sonderfall: Rückrufe als PDF (Product_recall_<Name>_<JJJJMMTT>) + /alerts/-Seiten.
@@ -80,7 +97,7 @@ function yearGuess(text) {
 }
 
 function cleanTitle(link, url) {
-  const t = (link.text || '').trim();
+  const t = (link.text || '').trim().replace(/^(download|herunterladen|pdf)[\s:–-]+/i, '').trim();
   if (t && t.length > 10 && !CTA.test(t)) return t;
   return titleFromSlug(url);
 }
@@ -108,13 +125,17 @@ function recordFrom(hub, url, title, date) {
 }
 
 // Prüft, ob die URL zur erwarteten Hub-Domain gehört (gegen Fremdmarken-Bleed).
+// hostMust darf String oder Array von erlaubten Host-Teilstrings sein.
 function hostOk(hub, url) {
   if (!hub.hostMust) return true;
+  let host;
   try {
-    return new URL(url).host.includes(hub.hostMust);
+    host = new URL(url).host;
   } catch {
     return false;
   }
+  const list = Array.isArray(hub.hostMust) ? hub.hostMust : [hub.hostMust];
+  return list.some((h) => host.includes(h));
 }
 
 // Link-basierte Hubs (Edelrid, Petzl, Mammut, Climbing Technology).
@@ -126,12 +147,14 @@ function scrapeLinks(hub, content) {
     const url = absUrl(link.href, hub.base);
     if (url && !candidates.has(url)) candidates.set(url, link.text || '');
   }
-  const rawRe = new RegExp(hub.linkRe.source, 'gi');
-  let rm;
-  while ((rm = rawRe.exec(content))) {
-    if (!rm[0].startsWith('/')) continue; // nur Pfadmuster gefahrlos absolutieren
-    const url = absUrl(rm[0], hub.base);
-    if (url && !candidates.has(url)) candidates.set(url, '');
+  if (hub.rawScan) {
+    const rawRe = new RegExp(hub.linkRe.source, 'gi');
+    let rm;
+    while ((rm = rawRe.exec(content))) {
+      if (!rm[0].startsWith('/')) continue; // nur Pfadmuster gefahrlos absolutieren
+      const url = absUrl(rm[0], hub.base);
+      if (url && !candidates.has(url)) candidates.set(url, '');
+    }
   }
 
   const out = [];

@@ -46,9 +46,12 @@ export function extractAllLinks(content) {
 }
 
 // Slug -> lesbarer Titel ("vorsorglicher-rueckruf" -> "Vorsorglicher Rueckruf").
+// Robust gegen Query (?v=…), Dateiendung und eingebettete Shopify-UUIDs.
 export function titleFromSlug(slug) {
-  const s = decodeURIComponent(String(slug || '').split('/').filter(Boolean).pop() || '')
-    .replace(/\.[a-z]+$/i, '')
+  const last = String(slug || '').split('?')[0].split('/').filter(Boolean).pop() || '';
+  const s = decodeURIComponent(last)
+    .replace(/\.[a-z0-9]{2,4}$/i, '') // Dateiendung
+    .replace(/[-_][0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/gi, '') // UUID
     .replace(/[-_]+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
