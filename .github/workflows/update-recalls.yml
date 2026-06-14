@@ -1,0 +1,52 @@
+name: Rückrufdaten aktualisieren
+
+# "Echtzeit" = regelmäßiger Cron. Holt alle Quellen serverseitig (kein CORS-Problem),
+# normalisiert sie und committet data/recalls.json. GitHub Pages (Branch main, /)
+# deployt den Commit automatisch.
+on:
+  schedule:
+    - cron: '17 */6 * * *' # alle 6 Stunden (versetzt, um Runner-Spitzen zu meiden)
+  workflow_dispatch: {} # manuell auslösbar
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**' # bei Pipeline-Änderungen Daten neu erzeugen
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-recalls
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node einrichten
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pipeline ausführen (Quellen abrufen → data/recalls.json)
+        run: node scripts/build.js
+        # build.js setzt exitCode=2 bei 0 Rückrufen; das soll den Lauf NICHT
+        # hart fehlschlagen lassen (vorhandene Daten bleiben dann erhalten).
+        continue-on-error: true
+
+      - name: Änderungen committen (falls vorhanden)
+        run: |
+          if [[ -n "$(git status --porcelain data/recalls.json)" ]]; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/recalls.json
+            git commit -m "data: Rückrufe aktualisiert ($(date -u +'%Y-%m-%dT%H:%MZ'))"
+            git push
+            echo "✓ Rückrufdaten aktualisiert und gepusht."
+          else
+            echo "Keine Änderungen an data/recalls.json."
+          fi

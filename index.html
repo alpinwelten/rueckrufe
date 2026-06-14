@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rückruf-Radar – PSAgA · Bergsport · Arbeitssicherheit</title>
+  <meta name="description" content="Aggregierte Produktrückrufe für PSA gegen Absturz, Bergsport und Arbeitssicherheit. Quellen: US CPSC, Hersteller-Rückrufseiten, EU Safety Gate.">
+
+  <!-- PWA / Theming -->
+  <meta name="theme-color" content="#006064">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Sprungmarke für Tastatur-/Screenreader-Nutzer -->
+  <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div class="brand-text">
+          <h1 class="brand-title">Rückruf-Radar</h1>
+          <p class="brand-subtitle">Produktrückrufe · PSAgA · Bergsport · Arbeitssicherheit</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <p class="updated" id="updatedAt">Lädt …</p>
+        <p class="sources-count" id="sourcesCount"></p>
+      </div>
+    </div>
+  </header>
+
+  <main id="hauptinhalt" class="wrap">
+
+    <!-- Statistik-Leiste -->
+    <section class="stats" id="stats" aria-label="Statistik" hidden>
+      <div class="stat stat-total">
+        <span class="stat-num" id="statTotal">–</span>
+        <span class="stat-label">Rückrufe gesamt</span>
+      </div>
+      <button type="button" class="stat stat-cat" data-cat="PSAgA" aria-pressed="false" aria-label="Nur PSAgA anzeigen">
+        <span class="stat-num" id="statPSAgA">–</span>
+        <span class="stat-label">PSAgA</span>
+      </button>
+      <button type="button" class="stat stat-cat" data-cat="Bergsport" aria-pressed="false" aria-label="Nur Bergsport anzeigen">
+        <span class="stat-num" id="statBergsport">–</span>
+        <span class="stat-label">Bergsport</span>
+      </button>
+      <button type="button" class="stat stat-cat" data-cat="Arbeitssicherheit" aria-pressed="false" aria-label="Nur Arbeitssicherheit anzeigen">
+        <span class="stat-num" id="statArbeitssicherheit">–</span>
+        <span class="stat-label">Arbeitssicherheit</span>
+      </button>
+      <button type="button" class="stat stat-cat" data-cat="Sonstiges" aria-pressed="false" aria-label="Nur Sonstiges anzeigen">
+        <span class="stat-num" id="statSonstiges">–</span>
+        <span class="stat-label">Sonstiges</span>
+      </button>
+    </section>
+
+    <!-- Filterleiste (sticky) -->
+    <section class="filters" id="filters" aria-label="Filter" hidden>
+      <!-- Kategorie-Chips -->
+      <div class="filter-row" role="group" aria-label="Nach Kategorie filtern">
+        <span class="filter-legend">Kategorie</span>
+        <div class="chips" id="categoryChips"></div>
+      </div>
+
+      <!-- Suche, Hersteller, Quelle, Schweregrad -->
+      <div class="filter-row filter-row-controls">
+        <div class="field field-grow">
+          <label class="field-label" for="searchInput">Volltextsuche</label>
+          <input
+            type="search"
+            id="searchInput"
+            class="text-input"
+            placeholder="Produkt, Hersteller, Stichwort …"
+            autocomplete="off"
+            aria-label="Volltextsuche über Titel, Hersteller, Produkte und Zusammenfassung">
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="manufacturerSelect">Hersteller</label>
+          <select id="manufacturerSelect" class="select-input" aria-label="Nach Hersteller filtern">
+            <option value="">Alle Hersteller</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="field-label" for="sourceSelect">Quelle</label>
+          <select id="sourceSelect" class="select-input" aria-label="Nach Quelle filtern">
+            <option value="">Alle Quellen</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Schweregrad-Chips + Reset + Trefferzähler -->
+      <div class="filter-row filter-row-bottom">
+        <div class="severity-group" role="group" aria-label="Nach Schweregrad filtern">
+          <span class="filter-legend">Schweregrad</span>
+          <div class="chips" id="severityChips"></div>
+        </div>
+        <div class="filter-actions">
+          <span class="result-count" id="resultCount" aria-live="polite"></span>
+          <button type="button" id="resetBtn" class="btn btn-ghost">Filter zurücksetzen</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zustands-/Ergebnis-Bereich -->
+    <section id="content" aria-live="polite">
+      <!-- Ladezustand -->
+      <div class="state state-loading" id="stateLoading">
+        <span class="spinner" aria-hidden="true"></span>
+        <p>Rückrufe werden geladen …</p>
+      </div>
+
+      <!-- Fehlerzustand -->
+      <div class="state state-error" id="stateError" hidden>
+        <p class="state-title">Daten konnten nicht geladen werden.</p>
+        <p id="errorDetail" class="state-detail"></p>
+        <button type="button" id="retryBtn" class="btn btn-primary">Erneut versuchen</button>
+      </div>
+
+      <!-- Leerzustand (keine Treffer) -->
+      <div class="state state-empty" id="stateEmpty" hidden>
+        <p class="state-title">Keine Rückrufe gefunden.</p>
+        <p class="state-detail">Bitte Filter anpassen oder zurücksetzen.</p>
+      </div>
+
+      <!-- Kartenliste -->
+      <ul class="cards" id="cardList" hidden></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <!-- Disclaimer prominent als Kasten -->
+      <div class="disclaimer" id="disclaimerBox" role="note"></div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h2 class="footer-h">Quellen</h2>
+          <ul class="footer-links">
+            <li><a href="https://www.saferproducts.gov" target="_blank" rel="noopener">US CPSC – saferproducts.gov ↗</a></li>
+            <li><span>Hersteller-Rückrufseiten (Petzl, EDELRID u. a.)</span></li>
+            <li><a href="https://ec.europa.eu/safety-gate-alerts" target="_blank" rel="noopener">EU Safety Gate ↗</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2 class="footer-h">Über das Projekt</h2>
+          <p class="footer-note">Build-free PWA – aktualisiert automatisch alle paar Stunden.</p>
+          <p class="footer-note">
+            <a href="https://github.com/alpinwelten/rueckrufe" target="_blank" rel="noopener">Quellcode auf GitHub ↗</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
