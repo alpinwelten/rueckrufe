@@ -6,7 +6,11 @@ Ein Radar für Produktrückrufe rund um PSAgA, Bergsport und Arbeitssicherheit �
 
 ## Was es tut
 
-Rückruf-Radar bündelt Produktrückrufe und Sicherheitshinweise zu **PSAgA** (PSA gegen Absturz), **Bergsport** und **Arbeitssicherheit** an einem Ort. Die Daten stammen aus drei Quellen:
+Rückruf-Radar bündelt Produktrückrufe und Sicherheitshinweise zu **PSAgA** (PSA gegen Absturz), **Bergsport** und **Arbeitssicherheit** an einem Ort.
+
+**EU-relevante Auswahl:** Es werden Rückrufe von in Europa verkauften Marken angezeigt – die Hersteller-Rückrufseiten und EU Safety Gate vollständig, US-CPSC-Meldungen nur, sofern sie eine bekannte EU-/Weltmarke betreffen (gleiches Produkt gilt in der EU). Rein US-/markenlose Produkte (z. B. Jagd-Baumsitz-Gurte, No-Name-Ware) werden verworfen (`scope: eu-relevant` in `data/recalls.json`).
+
+Die Daten stammen aus drei Quellengruppen:
 
 - **US CPSC** – die REST-API der Consumer Product Safety Commission (`saferproducts.gov`), gefiltert nach Domänenbegriffen und bekannten Marken.
 - **Hersteller-Rückrufseiten** – die Warnhinweis-/Safety-Alert-Hubs der Hersteller: **EDELRID** und **Climbing Technology** direkt, **Petzl**, **Mammut**, **SKYLOTEC**, **Black Diamond**, **Beal**, **DMM** und **Sterling Rope** über den `r.jina.ai`-Proxy (JS-gerendert/bot-geschützt). Jeder Hub ist domain-gebunden (keine Fremdmarken-Fehlzuordnung; Skylotec/BD-Seiten verlinken auch Fremdmarken) und hängt seine Marke per Schlüssel an (`attachKnownBrand`), unabhängig von der `ambiguous`-Heuristik.

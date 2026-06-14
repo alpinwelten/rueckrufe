@@ -47,21 +47,42 @@ async function main() {
     }
   }
 
-  const records = dedupe(raw).sort(sortRecords);
+  const deduped = dedupe(raw);
+
+  // EU-Relevanz-Filter: behalte alle Nicht-CPSC-Einträge (Hersteller-Hubs &
+  // EU Safety Gate sind EU/global) sowie CPSC-Einträge mit BEKANNTER, in Europa
+  // verkaufter Marke (gleiche Produkte gelten in der EU). Verwirf US-/markenlose
+  // CPSC-Treffer (z. B. Jagd-Baumsitz-Gurte, No-Name-Amazon).
+  const isEuRelevant = (r) => r.source !== 'CPSC' || !!r.brandKey;
+  const records = deduped.filter(isEuRelevant).sort(sortRecords);
+  const droppedUsOnly = deduped.length - records.length;
+
+  // Quellen-Zähler auf das TATSÄCHLICH angezeigte (gefilterte) Ergebnis ausrichten,
+  // damit das Quellen-Status-Panel zu den Karten passt; Roh-Abrufzahl als .fetched.
+  const groupOf = (src) => (src === 'CPSC' ? 'CPSC' : src === 'SafetyGate' ? 'SafetyGate' : 'Hersteller');
+  const finalByGroup = {};
+  for (const r of records) finalByGroup[groupOf(r.source)] = (finalByGroup[groupOf(r.source)] || 0) + 1;
+  for (const s of sourceStats) {
+    s.fetched = s.count;
+    s.count = finalByGroup[s.key] || 0;
+  }
 
   const data = {
     meta: {
       generatedAt: new Date().toISOString(),
       total: records.length,
       rawTotal: raw.length,
+      scope: 'eu-relevant',
+      droppedUsOnly,
       sources: sourceStats,
       bySource: tally(records, 'source'),
       byCategory: tally(records, 'category'),
       bySeverity: tally(records, 'severity'),
       disclaimer:
-        'Best-Effort-Aggregation öffentlicher Quellen (US CPSC, Hersteller-Rückrufseiten, ' +
-        'EU Safety Gate). Keine Gewähr für Vollständigkeit oder Aktualität. Im Zweifel immer ' +
-        'die offizielle Hersteller- bzw. Behördenmeldung prüfen.',
+        'EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-' +
+        'Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). ' +
+        'Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit ' +
+        'oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen.',
     },
     recalls: records,
   };
