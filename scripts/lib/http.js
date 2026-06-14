@@ -30,6 +30,13 @@ export async function fetchJson(url, opts = {}) {
   return JSON.parse(txt);
 }
 
+// Holt eine (oft JS-gerenderte oder bot-geschützte) Seite über den r.jina.ai-
+// Lese-Proxy als gerendertes Markdown. Für Hersteller-Hubs, die curl blocken.
+const PROXY = 'https://r.jina.ai/';
+export async function fetchViaProxy(url, opts = {}) {
+  return fetchText(PROXY + url, { timeout: 50000, retries: 1, ...opts });
+}
+
 export function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }

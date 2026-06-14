@@ -9,7 +9,7 @@ Ein Radar für Produktrückrufe rund um PSAgA, Bergsport und Arbeitssicherheit �
 Rückruf-Radar bündelt Produktrückrufe und Sicherheitshinweise zu **PSAgA** (PSA gegen Absturz), **Bergsport** und **Arbeitssicherheit** an einem Ort. Die Daten stammen aus drei Quellen:
 
 - **US CPSC** – die REST-API der Consumer Product Safety Commission (`saferproducts.gov`), gefiltert nach Domänenbegriffen und bekannten Marken.
-- **Hersteller-Rückrufseiten** – die Warnhinweis-/Safety-Alert-Hubs der Hersteller (aktuell **EDELRID** und **Petzl**).
+- **Hersteller-Rückrufseiten** – die Warnhinweis-/Safety-Alert-Hubs der Hersteller: **EDELRID** und **Climbing Technology** direkt, **Petzl**, **Mammut** und **SKYLOTEC** über den `r.jina.ai`-Proxy (JS-gerendert/bot-geschützt). Jeder Hub ist domain-gebunden (keine Fremdmarken-Fehlzuordnung).
 - **EU Safety Gate** (RAPEX) – best-effort über den `r.jina.ai`-Proxy (siehe Grenzen unten).
 
 Jeder Eintrag verlinkt auf die **Originalquelle** (`sourceUrl`) und – sofern die Marke erkannt wurde – zusätzlich auf die **Rückruf-/Sicherheitsseite des Herstellers** (`manufacturerUrl`).
@@ -24,7 +24,8 @@ Es gibt **kein** Live-Scraping im Browser. Ein **GitHub-Actions-Cron** (alle 6 h
                             ▼
    ┌──────────┐   ┌──────────────────┐   ┌────────────────┐
    │ US CPSC  │   │ Hersteller-Hubs   │   │ EU Safety Gate │
-   │ REST-API │   │ EDELRID · Petzl   │   │ via r.jina.ai  │
+   │ REST-API │   │ EDELRID·Petzl·CT· │   │ via r.jina.ai  │
+   │          │   │ Mammut·SKYLOTEC   │   │                │
    └────┬─────┘   └────────┬─────────┘   └───────┬────────┘
         │                  │                     │
         └──────────────────┼─────────────────────┘

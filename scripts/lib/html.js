@@ -27,6 +27,24 @@ export function extractLinks(html) {
   return out;
 }
 
+// Liefert [{ href, text }] aller Markdown-Links [Text](URL).
+// Bild-Links (![alt](url)) werden übersprungen.
+export function extractMarkdownLinks(md) {
+  const out = [];
+  const re = /\[([^\]]{1,200})\]\((https?:\/\/[^)\s]+)\)/g;
+  let m;
+  while ((m = re.exec(md))) {
+    if (md[m.index - 1] === '!') continue; // Bild-Markdown auslassen
+    out.push({ href: decodeEntities(m[2]), text: stripTags(m[1]) });
+  }
+  return out;
+}
+
+// Vereint <a>- und Markdown-Links (für HTML- wie Proxy-/Markdown-Inhalte).
+export function extractAllLinks(content) {
+  return [...extractLinks(content), ...extractMarkdownLinks(content)];
+}
+
 // Slug -> lesbarer Titel ("vorsorglicher-rueckruf" -> "Vorsorglicher Rueckruf").
 export function titleFromSlug(slug) {
   const s = decodeURIComponent(String(slug || '').split('/').filter(Boolean).pop() || '')
