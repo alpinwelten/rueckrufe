@@ -30,7 +30,7 @@ jobs:
       - name: Node einrichten
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Pipeline ausführen (Quellen abrufen → data/recalls.json)
         run: node scripts/build.js
@@ -40,13 +40,33 @@ jobs:
 
       - name: Änderungen committen (falls vorhanden)
         run: |
-          if [[ -n "$(git status --porcelain data/recalls.json)" ]]; then
-            git config user.name  "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/recalls.json
-            git commit -m "data: Rückrufe aktualisiert ($(date -u +'%Y-%m-%dT%H:%MZ'))"
-            git push
-            echo "✓ Rückrufdaten aktualisiert und gepusht."
-          else
+          if [[ -z "$(git status --porcelain data/recalls.json)" ]]; then
             echo "Keine Änderungen an data/recalls.json."
+            exit 0
           fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recalls.json
+          git commit -m "data: Rückrufe aktualisiert ($(date -u +'%Y-%m-%dT%H:%MZ'))"
+          # Robuster Push: Wenn ein paralleler Lauf (Cron/Push) den Remote bewegt,
+          # wird die frisch generierte Datei auf den neuen Stand neu aufgesetzt
+          # (generierte Datei = Quelle der Wahrheit) und erneut gepusht.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "✓ Rückrufdaten aktualisiert und gepusht (Versuch $attempt)."
+              exit 0
+            fi
+            echo "Push abgelehnt – Remote hat sich bewegt, setze neu auf (Versuch $attempt)…"
+            cp data/recalls.json "$RUNNER_TEMP/recalls.json"
+            git fetch origin main
+            git reset --hard origin/main
+            cp "$RUNNER_TEMP/recalls.json" data/recalls.json
+            if [[ -z "$(git status --porcelain data/recalls.json)" ]]; then
+              echo "Daten nach Reset bereits aktuell – nichts zu tun."
+              exit 0
+            fi
+            git add data/recalls.json
+            git commit -m "data: Rückrufe aktualisiert ($(date -u +'%Y-%m-%dT%H:%MZ'), retry $attempt)"
+          done
+          echo "::error::Push nach 3 Versuchen fehlgeschlagen."
+          exit 1
