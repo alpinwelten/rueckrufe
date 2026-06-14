@@ -54,6 +54,9 @@ const el = {
   sourcesCount: $('#sourcesCount'),
   stats: $('#stats'),
   statTotal: $('#statTotal'),
+  sourceHealth: $('#sourceHealth'),
+  sourceHealthBody: $('#sourceHealthBody'),
+  sourceHealthHint: $('#sourceHealthHint'),
   filters: $('#filters'),
   categoryChips: $('#categoryChips'),
   severityChips: $('#severityChips'),
@@ -205,6 +208,7 @@ async function ladeDaten() {
 function initNachLaden() {
   renderKopf();
   renderStatistik();
+  renderQuellenStatus();
   baueKategorieChips();
   baueSchweregradChips();
   baueHerstellerOptionen();
@@ -245,6 +249,69 @@ function renderStatistik() {
   }
   el.stats.hidden = false;
   el.filters.hidden = false;
+}
+
+/**
+ * Quellen-Status: zeigt transparent, welche Abruf-Quelle zuletzt lief
+ * (ok / leer / Fehler), wie viele Treffer sie lieferte und – für die
+ * Hersteller-Gruppe – die Aufschlüsselung je Marke. Daten aus meta.sources
+ * (Abruf-Gesundheit) und meta.bySource (finale Zähler je Quelle).
+ */
+function renderQuellenStatus() {
+  const m = state.meta;
+  if (!el.sourceHealth || !el.sourceHealthBody) return;
+  const groups = Array.isArray(m.sources) ? m.sources : [];
+  if (!groups.length && !m.bySource) return;
+
+  // source -> sourceLabel (für lesbare Markennamen in der Aufschlüsselung)
+  const labelMap = {};
+  for (const r of state.recalls) {
+    if (r.source && r.sourceLabel) labelMap[r.source] = r.sourceLabel;
+  }
+
+  el.sourceHealthBody.replaceChildren();
+  let okCount = 0;
+
+  for (const s of groups) {
+    const ok = s.ok !== false;
+    const count = typeof s.count === 'number' ? s.count : 0;
+    const status = !ok ? 'err' : count > 0 ? 'ok' : 'warn';
+    if (status === 'ok') okCount++;
+
+    const row = erstelle('div', 'sh-row');
+    const dot = erstelle('span', 'sh-dot sh-' + status);
+    dot.setAttribute('aria-hidden', 'true');
+    row.append(dot, erstelle('span', 'sh-label', s.label || s.key));
+
+    const meta = erstelle('span', 'sh-meta');
+    if (!ok) meta.textContent = 'Fehler' + (s.error ? `: ${s.error}` : '');
+    else if (count === 0) meta.textContent = 'keine Treffer (best-effort)';
+    else meta.textContent = `${count} Treffer` + (typeof s.ms === 'number' ? ` · ${(s.ms / 1000).toFixed(1)} s` : '');
+    row.append(meta);
+    el.sourceHealthBody.append(row);
+  }
+
+  // Hersteller-Aufschlüsselung je Marke (aus bySource, ohne CPSC/SafetyGate)
+  const by = m.bySource || {};
+  const brandKeys = Object.keys(by).filter((k) => k !== 'CPSC' && k !== 'SafetyGate');
+  if (brandKeys.length) {
+    const sub = erstelle('div', 'sh-brands');
+    sub.append(erstelle('span', 'sh-brands-label', 'Hersteller-Hubs: '));
+    const parts = brandKeys
+      .sort((a, b) => (by[b] - by[a]))
+      .map((k) => `${labelMap[k] || k} (${by[k]})`);
+    sub.append(document.createTextNode(parts.join(' · ')));
+    el.sourceHealthBody.append(sub);
+  }
+
+  el.sourceHealthBody.append(
+    erstelle('p', 'sh-stand', `Stand: ${formatZeitstempel(m.generatedAt)} · automatische Aktualisierung alle 6 Stunden`)
+  );
+
+  if (el.sourceHealthHint) {
+    el.sourceHealthHint.textContent = groups.length ? `${okCount}/${groups.length} Quellen aktiv` : '';
+  }
+  el.sourceHealth.hidden = false;
 }
 
 function renderDisclaimer() {

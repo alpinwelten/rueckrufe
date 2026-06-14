@@ -5,7 +5,7 @@
 // Seitenumbau sauber ab (leeres Ergebnis), ohne den Gesamt-Build zu gefährden.
 import { fetchText, fetchViaProxy, sleep } from './http.js';
 import { extractAllLinks, titleFromSlug, absUrl } from './html.js';
-import { classifyCategory, classifySeverity, attachManufacturer } from './taxonomy.js';
+import { classifyCategory, classifySeverity, attachKnownBrand } from './taxonomy.js';
 
 // hostMust: jeder Hub akzeptiert nur Links seiner eigenen Domain. Das verhindert
 // Fehlzuordnung von Fremdmarken-Links, die manche Hub-Seiten mit aufführen
@@ -13,20 +13,20 @@ import { classifyCategory, classifySeverity, attachManufacturer } from './taxono
 const HUBS = [
   {
     // Direkt (curl) – DE-Hub; deutsche Zielgruppe.
-    source: 'Edelrid', sourceLabel: 'EDELRID', via: 'direct', base: 'https://edelrid.com',
+    source: 'Edelrid', sourceLabel: 'EDELRID', brandKey: 'edelrid', via: 'direct', base: 'https://edelrid.com',
     url: 'https://edelrid.com/de-de/service/warnhinweis', hostMust: 'edelrid.com',
     linkRe: /\/de-de\/service\/warnhinweis\/[a-z0-9-]{6,}/i,
   },
   {
     // Proxy – Liste ist JS-gerendert; Datum steckt im URL-Pfad.
-    source: 'Petzl', sourceLabel: 'Petzl', via: 'proxy', base: 'https://www.petzl.com',
+    source: 'Petzl', sourceLabel: 'Petzl', brandKey: 'petzl', via: 'proxy', base: 'https://www.petzl.com',
     url: 'https://www.petzl.com/INT/en/Professional/safety-alerts', hostMust: 'petzl.com',
     linkRe: /\/safety-alerts\/\d{4}-\d{1,2}-\d{1,2}\/[a-z0-9-]{4,}/i,
     dateFromUrl: /(\d{4})-(\d{1,2})-(\d{1,2})/,
   },
   {
     // Proxy – Newsroom mischt Marketing & Rückrufe; Slug muss Rückruf-Begriff enthalten.
-    source: 'Mammut', sourceLabel: 'Mammut', via: 'proxy', base: 'https://pr.mammut.com',
+    source: 'Mammut', sourceLabel: 'Mammut', brandKey: 'mammut', via: 'proxy', base: 'https://pr.mammut.com',
     url: 'https://pr.mammut.com/', hostMust: 'mammut.com',
     linkRe: /pr\.mammut\.com\/[a-z0-9-]{8,}/i,
     slugMust: /rueckruf|recall|aufruf|selbstkontrolle|kontrollaufruf|sicherheit|safety|ueberpruefung|barryvox|skywalker|warnung/i,
@@ -34,7 +34,7 @@ const HUBS = [
   {
     // Direkt (curl) – saubere /alerts-Liste, Datum im Slug (en + it Monatsnamen).
     // Links stecken im JSON/Script -> Rohscan nötig.
-    source: 'ClimbingTechnology', sourceLabel: 'Climbing Technology', via: 'direct',
+    source: 'ClimbingTechnology', sourceLabel: 'Climbing Technology', brandKey: 'climbingtechnology', via: 'direct',
     base: 'https://www.climbingtechnology.com',
     url: 'https://www.climbingtechnology.com/en/alerts', hostMust: 'climbingtechnology.com',
     linkRe: /\/en\/alerts\/[a-z0-9-]{4,}/i,
@@ -43,7 +43,7 @@ const HUBS = [
   },
   {
     // Proxy – Rückruf-Seiten auf dem Shopify-Backend (black-diamond-na.myshopify.com).
-    source: 'BlackDiamond', sourceLabel: 'Black Diamond', via: 'proxy',
+    source: 'BlackDiamond', sourceLabel: 'Black Diamond', brandKey: 'blackdiamond', via: 'proxy',
     base: 'https://www.blackdiamondequipment.com',
     url: 'https://www.blackdiamondequipment.com/pages/product-recalls',
     hostMust: ['blackdiamondequipment.com', 'black-diamond-na.myshopify.com'],
@@ -52,14 +52,28 @@ const HUBS = [
   },
   {
     // Proxy – Rückrufe als PDF auf beal-planet.com (Katalog-PDFs liegen auf cdn.shopify.com -> hostMust filtert).
-    source: 'Beal', sourceLabel: 'Beal', via: 'proxy', base: 'https://www.beal-planet.com',
+    source: 'Beal', sourceLabel: 'Beal', brandKey: 'beal', via: 'proxy', base: 'https://www.beal-planet.com',
     url: 'https://www.beal-planet.com/en/pages/rappel-produits', hostMust: 'beal-planet.com',
     linkRe: /beal-planet\.com\/[^)\s"']*\.pdf/i,
     slugMust: /rappel|recall|inspection|tract|birdie|alert|warn/i,
   },
   {
+    // Proxy – Shopify-Hub; Detailseiten /pages/...-recall... (Dragon-Cam-Updates mit Jahr im Slug).
+    source: 'DMM', sourceLabel: 'DMM', brandKey: 'dmm', via: 'proxy', base: 'https://dmmwales.com',
+    url: 'https://dmmwales.com/pages/recall-info', hostMust: 'dmmwales.com',
+    linkRe: /\/pages\/[a-z0-9-]*recall[a-z0-9-]*/i,
+    slugDeny: /\/pages\/recall-info\b/i,
+  },
+  {
+    // Proxy – Sicherheitsmeldungen unter /sterling-solid/ (nur recall/inspect/safety-Slugs).
+    source: 'Sterling', sourceLabel: 'Sterling Rope', brandKey: 'sterling', via: 'proxy', base: 'https://sterlingrope.com',
+    url: 'https://sterlingrope.com/sterling-solid/', hostMust: 'sterlingrope.com',
+    linkRe: /\/sterling-solid\/[a-z0-9-]*(recall|inspect|safety|warn)[a-z0-9-]*/i,
+    rawScan: true, // Links liegen z. T. relativ vor -> Rohscan nötig
+  },
+  {
     // Proxy – Sonderfall: Rückrufe als PDF (Product_recall_<Name>_<JJJJMMTT>) + /alerts/-Seiten.
-    source: 'Skylotec', sourceLabel: 'SKYLOTEC', via: 'proxy', base: 'https://www.skylotec.com',
+    source: 'Skylotec', sourceLabel: 'SKYLOTEC', brandKey: 'skylotec', via: 'proxy', base: 'https://www.skylotec.com',
     url: 'https://www.skylotec.com/int_de/Retouren-und-Rueckrufe/', hostMust: 'skylotec.com',
     mode: 'skylotec',
   },
@@ -121,7 +135,8 @@ function recordFrom(hub, url, title, date) {
     sourceUrl: url,
     images: [],
   };
-  return attachManufacturer(rec);
+  // Marke steht beim Hub fest -> direkt per Schlüssel anhängen (umgeht ambiguous-Heuristik).
+  return attachKnownBrand(rec, hub.brandKey);
 }
 
 // Prüft, ob die URL zur erwarteten Hub-Domain gehört (gegen Fremdmarken-Bleed).

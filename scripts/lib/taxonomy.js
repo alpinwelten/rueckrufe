@@ -23,13 +23,13 @@ export const BRANDS = [
   { key: 'austrialpin', name: 'AustriAlpin', home: 'https://www.austrialpin.at', recall: 'https://www.austrialpin.at', aliases: ['austrialpin', 'austri alpin'] },
   { key: 'singingrock', name: 'Singing Rock', home: 'https://www.singingrock.com', recall: 'https://www.singingrock.com', aliases: ['singing rock', 'singingrock'] },
   { key: 'climbingtechnology', name: 'Climbing Technology', home: 'https://www.climbingtechnology.com', recall: 'https://www.climbingtechnology.com/en/alerts', aliases: ['climbing technology', 'aludesign'] },
-  { key: 'dmm', name: 'DMM', home: 'https://dmmwales.com', recall: 'https://dmmwales.com/knowledge/safety-notices', aliases: ['dmm', 'dmm wales', 'dmm climbing'] },
+  { key: 'dmm', name: 'DMM', home: 'https://dmmwales.com', recall: 'https://dmmwales.com/pages/recall-info', aliases: ['dmm', 'dmm wales', 'dmm climbing'] },
   { key: 'grivel', name: 'Grivel', home: 'https://www.grivel.com', recall: 'https://www.grivel.com', aliases: ['grivel'] },
   { key: 'kong', name: 'KONG', home: 'https://www.kong.it', recall: 'https://www.kong.it', aliases: ['kong'], denies: ['hong kong'], ambiguous: true },
   { key: 'salewa', name: 'Salewa', home: 'https://www.salewa.com', recall: 'https://www.salewa.com', aliases: ['salewa', 'oberalp'] },
   { key: 'ocun', name: 'Ocún', home: 'https://www.ocun.com', recall: 'https://www.ocun.com', aliases: ['ocun', 'ocún'] },
   { key: 'wildcountry', name: 'Wild Country', home: 'https://www.wildcountry.com', recall: 'https://www.wildcountry.com', aliases: ['wild country', 'wildcountry'] },
-  { key: 'sterling', name: 'Sterling Rope', home: 'https://sterlingrope.com', recall: 'https://sterlingrope.com/community/blog/category/recalls', aliases: ['sterling', 'sterling rope'], ambiguous: true },
+  { key: 'sterling', name: 'Sterling Rope', home: 'https://sterlingrope.com', recall: 'https://sterlingrope.com/sterling-solid/all-articles/', aliases: ['sterling', 'sterling rope'], ambiguous: true },
   { key: 'tendon', name: 'Tendon', home: 'https://www.mytendon.com', recall: 'https://www.mytendon.com', aliases: ['tendon', 'lanex'], ambiguous: true },
   { key: 'metolius', name: 'Metolius', home: 'https://www.metoliusclimbing.com', recall: 'https://www.metoliusclimbing.com', aliases: ['metolius'] },
   { key: 'ortovox', name: 'ORTOVOX', home: 'https://www.ortovox.com', recall: 'https://www.ortovox.com', aliases: ['ortovox'] },
@@ -157,6 +157,24 @@ export const SOURCE_LABELS = {
 // Fallback laut Nutzerwunsch: offizielle Hersteller-Startseite.
 export function attachManufacturer(rec) {
   const b = matchBrand(rec.manufacturer || '', rec.title || '', (rec.products || []).join(' '));
+  if (b) {
+    rec.manufacturerName = b.name;
+    rec.manufacturerUrl = b.recall || b.home;
+    rec.manufacturerHome = b.home;
+    rec.brandKey = b.key;
+  } else {
+    rec.manufacturerName = rec.manufacturer || null;
+    rec.manufacturerUrl = null;
+    rec.manufacturerHome = null;
+    rec.brandKey = null;
+  }
+  return rec;
+}
+
+// Hängt eine BEKANNTE Marke direkt per Schlüssel an (für Hersteller-Hubs, bei
+// denen die Marke feststeht – umgeht die ambiguous-Heuristik von matchBrand).
+export function attachKnownBrand(rec, key) {
+  const b = BRANDS.find((x) => x.key === key);
   if (b) {
     rec.manufacturerName = b.name;
     rec.manufacturerUrl = b.recall || b.home;

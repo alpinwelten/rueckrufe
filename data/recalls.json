@@ -1,29 +1,29 @@
 {
   "meta": {
-    "generatedAt": "2026-06-14T14:50:53.588Z",
-    "total": 132,
-    "rawTotal": 133,
+    "generatedAt": "2026-06-14T15:01:30.434Z",
+    "total": 139,
+    "rawTotal": 141,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
         "count": 90,
         "ok": true,
-        "ms": 13447
+        "ms": 10031
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
-        "count": 43,
+        "count": 51,
         "ok": true,
-        "ms": 8801
+        "ms": 11614
       },
       {
         "key": "SafetyGate",
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1285
+        "ms": 2282
       }
     ],
     "bySource": {
@@ -32,19 +32,21 @@
       "Skylotec": 1,
       "BlackDiamond": 8,
       "ClimbingTechnology": 13,
+      "DMM": 6,
       "Beal": 2,
       "Edelrid": 16,
-      "Mammut": 1
+      "Mammut": 1,
+      "Sterling": 1
     },
     "byCategory": {
       "PSAgA": 50,
-      "Sonstiges": 21,
+      "Sonstiges": 28,
       "Bergsport": 57,
       "Arbeitssicherheit": 4
     },
     "bySeverity": {
       "high": 44,
-      "medium": 86,
+      "medium": 93,
       "info": 2
     },
     "disclaimer": "Best-Effort-Aggregation öffentlicher Quellen (US CPSC, Hersteller-Rückrufseiten, EU Safety Gate). Keine Gewähr für Vollständigkeit oder Aktualität. Im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -1161,6 +1163,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2022-01-01",
+      "manufacturer": "DMM",
+      "title": "Important Safety Notice: Product Recall DMM Compact Swivel Units- 2/11/2022",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/02-november-2021-rollnlock",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -1693,6 +1724,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2019/Xtreme-Outdoor-Products-Recalls-Climbing-Sticks-Due-to-Fall-Hazard-and-Risk-of-Serious-Injury"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2019-01-01",
+      "manufacturer": "DMM",
+      "title": "Important Safety Notice: Nexus recall for inspection – 21/10/2019",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection"
         }
       ]
     },
@@ -2456,6 +2516,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/dmm-product-recall",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2015-01-01",
+      "manufacturer": "DMM",
+      "title": "Gate pusher user inspection and recall – 14/09/2015",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/dmm-product-recall",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/dmm-product-recall"
+        }
+      ]
+    },
+    {
       "id": "CPSC:1862",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -2549,7 +2638,7 @@
         "https://www.cpsc.gov/s3fs-public/Recall.2014.14108.sewneye_8mm_per_sewn_eye_800.jpg"
       ],
       "manufacturerName": "Sterling Rope",
-      "manufacturerUrl": "https://sterlingrope.com/community/blog/category/recalls",
+      "manufacturerUrl": "https://sterlingrope.com/sterling-solid/all-articles/",
       "manufacturerHome": "https://sterlingrope.com",
       "brandKey": "sterling",
       "sources": [
@@ -2992,6 +3081,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2011-01-01",
+      "manufacturer": "DMM",
+      "title": "Update on Dragon 4 & 5 Recall - 11/03/2011",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011"
+        }
+      ]
+    },
+    {
       "id": "CPSC:517",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -3089,6 +3207,64 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2010/Muddy-Outdoors-Recalls-Climbing-Sticks-Due-to-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2010-01-01",
+      "manufacturer": "DMM",
+      "title": "Dragon 6 recall update – 24/09/2010",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2010-01-01",
+      "manufacturer": "DMM",
+      "title": "Recall on the Dragon Camming device size 6 – 23/07/2010",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010"
         }
       ]
     },
@@ -3558,7 +3734,7 @@
         "https://www.cpsc.gov/s3fs-public/helium-caribiner.jpg"
       ],
       "manufacturerName": "DMM",
-      "manufacturerUrl": "https://dmmwales.com/knowledge/safety-notices",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
       "manufacturerHome": "https://dmmwales.com",
       "brandKey": "dmm",
       "sources": [
@@ -4189,6 +4365,35 @@
           "source": "BlackDiamond",
           "sourceLabel": "Black Diamond",
           "url": "https://black-diamond-na.myshopify.com/pages/neve-strap-recall"
+        }
+      ]
+    },
+    {
+      "id": "Sterling:https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools",
+      "source": "Sterling",
+      "sourceLabel": "Sterling Rope",
+      "date": null,
+      "manufacturer": "Sterling Rope",
+      "title": "Notice To Inspect 6 8mm Accessory Cord Spools",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools",
+      "images": [],
+      "manufacturerName": "Sterling Rope",
+      "manufacturerUrl": "https://sterlingrope.com/sterling-solid/all-articles/",
+      "manufacturerHome": "https://sterlingrope.com",
+      "brandKey": "sterling",
+      "sources": [
+        {
+          "source": "Sterling",
+          "sourceLabel": "Sterling Rope",
+          "url": "https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools"
         }
       ]
     },
