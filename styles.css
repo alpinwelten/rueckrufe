@@ -5,33 +5,44 @@
    ============================================================ */
 
 :root {
-  /* Teal-Markenfarben */
-  --teal: #006064;        /* Primär: Header / Buttons / Links */
-  --teal-dk: #00474b;     /* Hover / dunkel */
-  --teal-mid: #00787e;
-  --teal-soft: #3e969a;
-  --teal-light: #7cc4c6;
+  /* Klar/Teal – kanonische Palette
+     (Quelle: ~/Dokumente/Skills/Farbpalette/Klar-Teal-Palette.html) */
 
-  /* Neutralwerte */
-  --ink: #1a1a1a;         /* Text */
-  --muted: #5e6b6b;       /* Sekundärtext */
-  --bg: #f0fafa;          /* Seitenhintergrund */
-  --surface: #ffffff;     /* Karten */
-  --surface-2: #eef2f2;
-  --tint: #e6f4f4;        /* zarte Flächen */
-  --border: #cfd8d9;      /* dünne Linien */
-  --border-soft: #dcefef;
-  --sand: #ba8a52;        /* Akzent / Gold, sparsam */
+  /* Teal-Ramp (Primär) */
+  --teal-50:#F0FAFA; --teal-100:#DCEFEF; --teal-200:#AEDDDE; --teal-300:#7CC4C6;
+  --teal-400:#3E969A; --teal-500:#2F8A8E; --teal-600:#00787E; --teal-700:#006064;
+  --teal-800:#00474B; --teal-900:#002828;
+  --teal: #006064;        /* PRIMÄR – Header / Buttons / Links (teal-700) */
+  --teal-dk: #00474B;     /* Hover / dunkel (teal-800) */
+  --teal-mid: #00787E;    /* teal-600 */
+  --teal-soft: #3E969A;   /* teal-400 */
+  --teal-light: #7CC4C6;  /* teal-300 */
 
-  /* Funktionale Ampel */
-  --sev-high: #be5b41;    /* akut – Terrakotta-Rot */
-  --sev-medium: #ba8a52;  /* Rückruf – Gold/Amber */
-  --sev-info: #2f6e57;    /* Prüfung – Grün */
+  /* Neutrale (kühl abgestimmt) */
+  --ink: #1A1A1A;         /* Fließtext */
+  --muted: #5E6B6B;       /* Metazeile / Sekundärtext */
+  --rule-strong: #33605F; /* starke Linien / Titelakzent (teal-ink) */
+  --bg: #F6FAFA;          /* Web-Seitenhintergrund (--page) */
+  --surface: #FFFFFF;     /* Karten (Print/Flächen-Weiß) */
+  --surface-2: #F0FAFA;   /* „Luft“ – Flächen / Footer / Zustände */
+  --tint: #E6F4F4;        /* zarte Teal-Fläche (Tags, Callouts) */
+  --border: #CFD8D9;      /* feine Linien / Rahmen */
+  --border-soft: #DCEFEF; /* sehr feine Linien */
+  --sand: #BA8A52;        /* Akzent – Sand-Bronze (sparsam) */
+  --focus: #2F8A8E;       /* Fokusring */
+  --selection: #BFE2E3;
+
+  /* Funktionale Ampel (Status – kanonisch: Text auf Tönung) */
+  --sev-high: #8B1A1A;    --sev-high-bg: #FEE2E2;   /* akut / kritisch */
+  --sev-medium: #B45309;  --sev-medium-bg: #FEF3C7; /* Rückruf / Warnung */
+  --sev-info: #B7791F;    --sev-info-bg: #FEF0D7;   /* Sicherheitsprüfung / Vorsicht */
 
   --radius: 10px;
   --radius-sm: 6px;
   --maxw: 1100px;
 }
+
+::selection { background: var(--selection); }
 
 /* ---------- Reset / Grundlagen ---------- */
 *,
@@ -404,19 +415,20 @@ a:hover { color: var(--teal-dk); text-decoration: underline; }
   gap: 8px;
 }
 
-/* Schweregrad-Badge */
+/* Schweregrad-Badge – kanonischer Status-Pill: Text auf Tönung */
 .badge {
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.2px;
   padding: 3px 9px;
   border-radius: 999px;
-  color: #fff;
   white-space: nowrap;
+  color: var(--ink);
+  background: var(--surface-2);
 }
-.badge.sev-high   { background: var(--sev-high); }
-.badge.sev-medium { background: var(--sev-medium); }
-.badge.sev-info   { background: var(--sev-info); }
+.badge.sev-high   { color: var(--sev-high);   background: var(--sev-high-bg); }
+.badge.sev-medium { color: var(--sev-medium); background: var(--sev-medium-bg); }
+.badge.sev-info   { color: var(--sev-info);   background: var(--sev-info-bg); }
 
 .tag {
   font-size: 0.76rem;
