@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-06-15T12:47:00.846Z",
-    "total": 91,
-    "rawTotal": 128,
+    "generatedAt": "2026-06-15T21:27:37.298Z",
+    "total": 104,
+    "rawTotal": 141,
     "scope": "eu-relevant",
     "droppedUsOnly": 35,
     "sources": [
@@ -11,23 +11,23 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 14285,
+        "ms": 15695,
         "fetched": 90
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
-        "count": 36,
+        "count": 49,
         "ok": true,
-        "ms": 56851,
-        "fetched": 38
+        "ms": 43039,
+        "fetched": 51
       },
       {
         "key": "SafetyGate",
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 10912,
+        "ms": 11004,
         "fetched": 0
       }
     ],
@@ -36,6 +36,7 @@
       "Petzl": 1,
       "Skylotec": 1,
       "BlackDiamond": 8,
+      "ClimbingTechnology": 13,
       "DMM": 6,
       "Beal": 2,
       "Edelrid": 16,
@@ -44,13 +45,13 @@
     },
     "byCategory": {
       "PSAgA": 30,
-      "Bergsport": 54,
+      "Bergsport": 67,
       "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
       "high": 32,
-      "medium": 58,
+      "medium": 71,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -660,6 +661,35 @@
       ]
     },
     {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/24-may-2023-gryphon",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2023-05-24",
+      "manufacturer": "Climbing Technology",
+      "title": "24 May 2023 Gryphon",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/24-may-2023-gryphon",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/24-may-2023-gryphon"
+        }
+      ]
+    },
+    {
       "id": "CPSC:9604",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -726,6 +756,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2023/Mammut-Sports-Group-Recalls-Alugator-Ride-3-0-Hoe-and-Alugator-Ride-SE-Avalanche-Shovels-Due-to-Risk-of-Injury-or-Death"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/04-august-2022-anchor-cam",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2022-08-04",
+      "manufacturer": "Climbing Technology",
+      "title": "04 August 2022 Anchor Cam",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/04-august-2022-anchor-cam",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/04-august-2022-anchor-cam"
         }
       ]
     },
@@ -894,6 +953,64 @@
       ]
     },
     {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/02-november-2021-rollnlock",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2021-11-02",
+      "manufacturer": "Climbing Technology",
+      "title": "02 November 2021 Rollnlock",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/02-november-2021-rollnlock",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/02-november-2021-rollnlock"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/04-may-2021-easy-speed",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2021-05-04",
+      "manufacturer": "Climbing Technology",
+      "title": "04 May 2021 Easy Speed",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/04-may-2021-easy-speed",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/04-may-2021-easy-speed"
+        }
+      ]
+    },
+    {
       "id": "CPSC:9036",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -926,6 +1043,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2021/Black-Diamond-Recalls-PIEPS-DSP-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications-One-Death-Reported"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/07-april-2021-q-link-08",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2021-04-07",
+      "manufacturer": "Climbing Technology",
+      "title": "07 April 2021 Q Link 08",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/07-april-2021-q-link-08",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/07-april-2021-q-link-08"
         }
       ]
     },
@@ -1053,6 +1199,122 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2020/Petzl-Recalls-Safety-Ropes-Due-to-Fall-and-Injury-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/17-september-2020-finch",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2020-09-17",
+      "manufacturer": "Climbing Technology",
+      "title": "17 September 2020 Finch",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/17-september-2020-finch",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/17-september-2020-finch"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/15-gennaio-2020-orbiter-m",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2020-01-15",
+      "manufacturer": "Climbing Technology",
+      "title": "15 Gennaio 2020 Orbiter M",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/15-gennaio-2020-orbiter-m",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/15-gennaio-2020-orbiter-m"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/12-september-2019-dual",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2019-09-12",
+      "manufacturer": "Climbing Technology",
+      "title": "12 September 2019 Dual",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/12-september-2019-dual",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/12-september-2019-dual"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/09-september-2019-up-lock",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2019-09-09",
+      "manufacturer": "Climbing Technology",
+      "title": "09 September 2019 Up Lock",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/09-september-2019-up-lock",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/09-september-2019-up-lock"
         }
       ]
     },
@@ -1538,6 +1800,35 @@
       ]
     },
     {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/february-2015-ice-crampons",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2015-02-01",
+      "manufacturer": "Climbing Technology",
+      "title": "February 2015 Ice Crampons",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/february-2015-ice-crampons",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/february-2015-ice-crampons"
+        }
+      ]
+    },
+    {
       "id": "DMM:https://dmmwales.com/pages/dmm-product-recall",
       "source": "DMM",
       "sourceLabel": "DMM",
@@ -1764,6 +2055,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2013/Liberty-Mountain-Recalls-Mountain-Climbing-Lanyards"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/august-2012-via-ferrata",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": "2012-08-01",
+      "manufacturer": "Climbing Technology",
+      "title": "August 2012 Via Ferrata",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/august-2012-via-ferrata",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/august-2012-via-ferrata"
         }
       ]
     },
@@ -2709,6 +3029,35 @@
       ]
     },
     {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/finch-instructions-for-use",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": null,
+      "manufacturer": "Climbing Technology",
+      "title": "Finch Instructions For Use",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/finch-instructions-for-use",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/finch-instructions-for-use"
+        }
+      ]
+    },
+    {
       "id": "Edelrid:https://edelrid.com/de-de/service/warnhinweis/hinweis-aufruf-zur-sicherheitsueberpruefung-der-firma-peguet-maillon-rapide-sas",
       "source": "Edelrid",
       "sourceLabel": "EDELRID",
@@ -2763,6 +3112,35 @@
           "source": "BlackDiamond",
           "sourceLabel": "Black Diamond",
           "url": "https://black-diamond-na.myshopify.com/pages/jetforce-recall"
+        }
+      ]
+    },
+    {
+      "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/mag-fluid-safety-recall",
+      "source": "ClimbingTechnology",
+      "sourceLabel": "Climbing Technology",
+      "date": null,
+      "manufacturer": "Climbing Technology",
+      "title": "Mag Fluid Safety Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.climbingtechnology.com/en/alerts/mag-fluid-safety-recall",
+      "images": [],
+      "manufacturerName": "Climbing Technology",
+      "manufacturerUrl": "https://www.climbingtechnology.com/en/alerts",
+      "manufacturerHome": "https://www.climbingtechnology.com",
+      "brandKey": "climbingtechnology",
+      "sources": [
+        {
+          "source": "ClimbingTechnology",
+          "sourceLabel": "Climbing Technology",
+          "url": "https://www.climbingtechnology.com/en/alerts/mag-fluid-safety-recall"
         }
       ]
     },
