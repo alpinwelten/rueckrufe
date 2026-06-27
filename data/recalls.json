@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-06-27T14:10:00.341Z",
-    "total": 104,
-    "rawTotal": 141,
+    "generatedAt": "2026-06-27T19:52:54.704Z",
+    "total": 98,
+    "rawTotal": 132,
     "scope": "eu-relevant",
-    "droppedUsOnly": 35,
+    "droppedUsOnly": 32,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 55,
+        "count": 49,
         "ok": true,
-        "ms": 14099,
-        "fetched": 90
+        "ms": 275616,
+        "fetched": 81
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 49,
         "ok": true,
-        "ms": 38731,
+        "ms": 46392,
         "fetched": 51
       },
       {
@@ -27,12 +27,12 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 3923,
+        "ms": 7950,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 55,
+      "CPSC": 49,
       "Petzl": 1,
       "Skylotec": 1,
       "BlackDiamond": 8,
@@ -44,14 +44,14 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 30,
-      "Bergsport": 67,
+      "PSAgA": 26,
+      "Bergsport": 65,
       "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
-      "high": 32,
-      "medium": 71,
+      "high": 29,
+      "medium": 68,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -122,41 +122,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:10684",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2026-04-02",
-      "manufacturer": "OCUN NA",
-      "title": "OCUN NA Recalls Condor HMS Triple Carabiners Due to Risk of Serious Injury or Death from Fall Hazard",
-      "summary": "This recall involves Ocun Condor HMS Triple Carabiners sold in dark gray and blue. The carabiners have an independent internal wire gate for belaying and rappelling and a triple locking action gate. The affected carabiners have the following batch numbers 24003xx, 24004xx, 24010xx, 24023xx, 24024xx, 24025xx, 25005xx,…",
-      "hazard": "The carabiner's gate can malfunction where the gate does not close automatically and has to be closed manually by hand, posing a risk of serious injury or death due to falling.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Ocun Condor HMS Triple Locking Carabiners"
-      ],
-      "countries": [
-        "Taiwan"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/OCUN-NA-Recalls-Condor-HMS-Triple-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Picture24_1.png",
-        "https://www.cpsc.gov/s3fs-public/Picture25_1.png",
-        "https://www.cpsc.gov/s3fs-public/Picture26_1.png"
-      ],
-      "manufacturerName": "Ocún",
-      "manufacturerUrl": "https://www.ocun.com",
-      "manufacturerHome": "https://www.ocun.com",
-      "brandKey": "ocun",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2026/OCUN-NA-Recalls-Condor-HMS-Triple-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
         }
       ]
     },
@@ -251,42 +216,6 @@
           "source": "Skylotec",
           "sourceLabel": "SKYLOTEC",
           "url": "https://cdn-dotcom-prod.skylotec.com/media/3b/b3/a5/1768490926/Product_recall_BREASEY_20260115_DE_EN.pdf?ts=1768490926"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:10389",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2025-08-28",
-      "manufacturer": "C.A.M.P.",
-      "title": "C.A.M.P. Recalls Nimbus Lock Carabiners Due to Risk of Serious Injury or Death from Fall",
-      "summary": "This recall involves Nimbus Lock Carabiners sold in Gun Metal/Green, Gun Metal/Fuchsia and Gun Metal/Blue. The affected carabiners were sold individually or as part of the Nimbus Lock 3 Pack, the Locker Draw KS, the Energy CR3 Pack and the Energy Nova Pack. Only the carabiners are included in this recall. The…",
-      "hazard": "The carabiner's automatic closing mechanism can break and prevent the gate from closing, posing a risk of serious injury or death due to falling.",
-      "severity": "high",
-      "category": "Bergsport",
-      "products": [
-        "Nimbus Lock Carabiners"
-      ],
-      "countries": [
-        "China"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/CAMP-Recalls-Nimbus-Lock-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Nimbus-1.png",
-        "https://www.cpsc.gov/s3fs-public/Nimbus-2.png",
-        "https://www.cpsc.gov/s3fs-public/Nimbus-3.png",
-        "https://www.cpsc.gov/s3fs-public/Nimbus-4.png"
-      ],
-      "manufacturerName": "CAMP",
-      "manufacturerUrl": "https://www.camp.it/en/safety-notice",
-      "manufacturerHome": "https://www.camp.it",
-      "brandKey": "camp",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2025/CAMP-Recalls-Nimbus-Lock-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall"
         }
       ]
     },
@@ -624,39 +553,6 @@
           "source": "BlackDiamond",
           "sourceLabel": "Black Diamond",
           "url": "https://black-diamond-na.myshopify.com/pages/2024-pieps-pro-ips-recall"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:9670",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2023-07-20",
-      "manufacturer": "Salewa USA",
-      "title": "Salewa USA Recalls Wild Country Superlight Rocks Cable Wire Chocks Used for Climbing Due to Fall Hazard",
-      "summary": "This recall involves Wild Country brand Superlight Rocks (model number 40-RSL) and Superlight Rocks Set 1-6 (model number 40-RSLSET) single cable wire chocks used for climbing. Superlight Rocks were sold as a set of 6 and individually in six different sizes and colors including: size 1 purple, size 2 green, size 3…",
-      "hazard": "When exposed to seaside conditions, corrosion can occur and weaken the cable chocks and they can break, posing a fall hazard to climbers.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Superlight Rocks"
-      ],
-      "countries": [
-        "Taiwan"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2023/Salewa-USA-Recalls-Wild-Country-Superlight-Rocks-Cable-Wire-Chocks-Used-for-Climbing-Due-to-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/wild-country.png"
-      ],
-      "manufacturerName": "Salewa",
-      "manufacturerUrl": "https://www.salewa.com",
-      "manufacturerHome": "https://www.salewa.com",
-      "brandKey": "salewa",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2023/Salewa-USA-Recalls-Wild-Country-Superlight-Rocks-Cable-Wire-Chocks-Used-for-Climbing-Due-to-Fall-Hazard"
         }
       ]
     },
@@ -1413,75 +1309,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2018/ORTOVOX-Recalls-Avalanche-Transceivers-Due-to-Loss-of-Emergency-Communications-Capability"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:8187",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2017-11-21",
-      "manufacturer": "Omega Pacific Inc., of Airway Heights, Wash.",
-      "title": "Omega Pacific Recalls Carabiners Due to Risk of Injury or Death",
-      "summary": "This recall involves six models of Omega Pacific G-FIRST series aluminum carabiners. They are typically used to allow ropes and harnesses to be linked together. \"Omega-17 UL Classified USA\" is printed on the front and \"Meets NFPA 1983 17ED MBS kN 40 G\" statement is located on the back side. The 2-digit lot code \"OD\"…",
-      "hazard": "The carabiner can break while in use, posing a risk of injury or death to the user.",
-      "severity": "high",
-      "category": "Bergsport",
-      "products": [
-        "Carabiners"
-      ],
-      "countries": [
-        "United States"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2018/Omega-Pacific-Recalls-Carabiners-Due-to-Risk-of-Injury-or-Death",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Front side of the recalled G-FIRST series carabiners.jpg",
-        "https://www.cpsc.gov/s3fs-public/Back side of the recalled G-FIRST series carabiners.jpg",
-        "https://www.cpsc.gov/s3fs-public/Location for Lot Code on carabiner spine.jpg"
-      ],
-      "manufacturerName": "Omega Pacific",
-      "manufacturerUrl": "https://www.omegapacific.com",
-      "manufacturerHome": "https://www.omegapacific.com",
-      "brandKey": "omegapacific",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2018/Omega-Pacific-Recalls-Carabiners-Due-to-Risk-of-Injury-or-Death"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:7843",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2016-08-31",
-      "manufacturer": "Salewa North America",
-      "title": "Salewa North America Recalls Wild Country Climbing Harnesses Due to Fall Hazard (Recall Alert)",
-      "summary": "This recall applies to all Wild Country Syncro harnesses sold in the United States. The harness has a black nylon exterior and orange interior. \"Wild Country\" and \"Syncro\" is printed on a label affixed to the interior, above batch code: 01 A 01 16.",
-      "hazard": "Excess materials on the left waist belt tab can cause the harness to loosen, posing a fall hazard to the user.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Wild Country Syncro Harnesses"
-      ],
-      "countries": [
-        "China"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Salewa-North-America-Recalls-Wild-Country-Climbing-Harnesses",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/WildCountrySyncroHarness.jpg",
-        "https://www.cpsc.gov/s3fs-public/BatchCode.jpg"
-      ],
-      "manufacturerName": "Salewa",
-      "manufacturerUrl": "https://www.salewa.com",
-      "manufacturerHome": "https://www.salewa.com",
-      "brandKey": "salewa",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2016/Salewa-North-America-Recalls-Wild-Country-Climbing-Harnesses"
         }
       ]
     },
@@ -2246,40 +2073,6 @@
           "source": "DMM",
           "sourceLabel": "DMM",
           "url": "https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:517",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2010-11-23",
-      "manufacturer": "L.L.Bean",
-      "title": "L.L.Bean Recalls Folding Camp Rockers Due to Fall Hazard",
-      "summary": "This recall involves L.L.Bean folding camp rockers with a fabric cover and a steel frame. The rockers have a fabric/mesh seat and back and a cup holder on the right armrest. \"L.L.Bean\" is printed on the seat back. Rockers with the number RNR113 and RNR114 listed on the white tag under the seat are included in the…",
-      "hazard": "The plastic anchors attaching the fabric seat back to the frame can break, posing a fall hazard to consumers.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Folding Camp Rockers"
-      ],
-      "countries": [
-        "China"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11050.11050a.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11050.11050b.jpg"
-      ],
-      "manufacturerName": "CAMP",
-      "manufacturerUrl": "https://www.camp.it/en/safety-notice",
-      "manufacturerHome": "https://www.camp.it",
-      "brandKey": "camp",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard"
         }
       ]
     },
