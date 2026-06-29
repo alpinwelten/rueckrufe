@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-06-29T16:18:01.163Z",
-    "total": 99,
-    "rawTotal": 136,
+    "generatedAt": "2026-06-29T20:18:32.336Z",
+    "total": 104,
+    "rawTotal": 141,
     "scope": "eu-relevant",
     "droppedUsOnly": 35,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 50,
+        "count": 55,
         "ok": true,
-        "ms": 231926,
-        "fetched": 85
+        "ms": 18954,
+        "fetched": 90
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 49,
         "ok": true,
-        "ms": 33539,
+        "ms": 45407,
         "fetched": 51
       },
       {
@@ -27,12 +27,12 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 11494,
+        "ms": 5326,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 50,
+      "CPSC": 55,
       "Petzl": 1,
       "Skylotec": 1,
       "BlackDiamond": 8,
@@ -44,14 +44,14 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 29,
-      "Bergsport": 66,
-      "Arbeitssicherheit": 3,
-      "Sonstiges": 1
+      "PSAgA": 30,
+      "Bergsport": 67,
+      "Arbeitssicherheit": 4,
+      "Sonstiges": 3
     },
     "bySeverity": {
-      "high": 31,
-      "medium": 67,
+      "high": 32,
+      "medium": 71,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -1626,6 +1626,42 @@
       ]
     },
     {
+      "id": "CPSC:6689",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2016-03-30",
+      "manufacturer": "Black Diamond",
+      "title": "Black Diamond Recalls Nylon Runners Due to Fall Hazard",
+      "summary": "This recall involves Black Diamond 18 mm wide nylon runners that are 60 cm/24 inches or 120 cm/48 inches long that have a tape splice (two cut ends joined by masking tape). The nylon runners were sold in red, blue, gold, green, gray and purple. \"CE 0333\" and 2014 or 2015 are printed on the sewn-in label.",
+      "hazard": "A nylon runner with a tape splice (two cut ends joined by masking tape) will fail in normal use, posing a risk of death or injury due to a fall.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Nylon Runners"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Nylon-Runners",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.TapeSliceInTheNylonRunner.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.BlackDiamondNylonRunners.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.WarningLabelOnTheNylonRunne.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.WarningLabelOnTheNylonRunners2015.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Nylon-Runners"
+        }
+      ]
+    },
+    {
       "id": "CPSC:6490",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1818,6 +1854,42 @@
           "source": "DMM",
           "sourceLabel": "DMM",
           "url": "https://dmmwales.com/pages/dmm-product-recall"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:1862",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2014-11-18",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls Whippet Ski Poles Due to Risk of Injury",
+      "summary": "This recall includes Black Diamond Whippet and Whippet Carbon ski poles manufactured May 2013 through January 2014. The Whippet is gray with two telescoping shafts and the Carbon Whippet is black with three telescoping shafts. The upper shaft of both models is made of aluminum and has a black and orange rubber…",
+      "hazard": "The stainless steel pick in the handgrip can break and fail to slow or stop users from sliding downhill on a snow or ice covered slope, posing a risk of injury.",
+      "severity": "medium",
+      "category": "Arbeitssicherheit",
+      "products": [
+        "Ski poles"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2015/Black-Diamond-Equipment-Recalls-Whippet-Ski-Poles",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.1-WhippetLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.2-CarbonWhippetLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.3-WhippetRecalledPickLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.4WhippetDateLocsLARGE.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2015/Black-Diamond-Equipment-Recalls-Whippet-Ski-Poles"
         }
       ]
     },
@@ -2113,6 +2185,42 @@
       ]
     },
     {
+      "id": "CPSC:549",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2011-01-05",
+      "manufacturer": "Black Diamond Equipment, Ltd. of Salt Lake City, Utah",
+      "title": "Avalung Backpacks Recalled by Black Diamond Equipment Due to Suffocation Hazard",
+      "summary": "This recall involves the following Black Diamond 2010 Avalung backpacks (see chart below). These backpacks have an air intake system that the company states extracts air from the snow, allowing the victim of an avalanche to breathe while buried under the snow. The model name and color are printed on the side of the…",
+      "hazard": "The air intake tubing can crack under cold temperatures, causing the unit not to function as intended, posing a suffocation hazard.",
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [
+        "Avalung backpacks"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2011/Avalung-Backpacks-Recalled-by-Black-Diamond-Equipment-Due-to-Suffocation-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084a.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084b.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084c.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084d.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2011/Avalung-Backpacks-Recalled-by-Black-Diamond-Equipment-Due-to-Suffocation-Hazard"
+        }
+      ]
+    },
+    {
       "id": "DMM:https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
       "source": "DMM",
       "sourceLabel": "DMM",
@@ -2339,6 +2447,40 @@
       ]
     },
     {
+      "id": "CPSC:3387",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2005-12-16",
+      "manufacturer": "Calzaturifico S.C.A.R.P.A. S.P.A., of Italy",
+      "title": "CPSC, Black Diamond Equipment Announce Recall of Scarpa T2X Telemark Ski Boots",
+      "summary": "The two recalled models of T2X Telemark ski boot can be identified by a dual color ankle cuff and the marking T2X on the outside of each boot (boxes are marked with model numbers: 142045 Men's and 142046). Repaired or replaced product can be identified by a single color cuff: Men's cuffs are red, women's cuffs are…",
+      "hazard": "The plastic boot cuff can crack when flexed open in an unbuckled non-skiing position, causing discomfort on the ankle or shin, making the problem evident prior to skiing and thus unsuitable for use.",
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [
+        "Scarpa T2X Telemark Ski Boots"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2006/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Scarpa-T2X-Telemark-Ski-Boots",
+      "images": [
+        "https://www.cpsc.gov/~/link/eaf7a46d2d7f47e891d25fc0facfd8d3.jpg",
+        "https://www.cpsc.gov/~/link/50880c0d9a0a484297a8ea8a86d89f8a.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2006/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Scarpa-T2X-Telemark-Ski-Boots"
+        }
+      ]
+    },
+    {
       "id": "CPSC:3017",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -2436,6 +2578,39 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Climb-High-Inc-Announce-Recall-of-Avalanche-Transceivers-"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:2818",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2004-11-09",
+      "manufacturer": "Black Diamond Equipment Ltd., of Salt Lake City, Utah",
+      "title": "CPSC, Black Diamond Equipment Announce Recall of Headlamp Batteries",
+      "summary": "The recalled batteries are found in Black Diamond Soliras headlamps. The batteries have the following dates, which can be found on the battery label: 0703, 0803, 0903, 1003, 1103, 1203, 0104, 0204, 0304, 0404, and 0504. The black headlamp has the words and symbol for the company on the light.",
+      "hazard": "The headlamp battery may overheat, posing a burn or fire hazard to users.",
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [
+        "Soliras Headlamp Lithium-ion Batteries"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2005/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Headlamp-Batteries-",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/black-diamond-headlamp.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Headlamp-Batteries-"
         }
       ]
     },
