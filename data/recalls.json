@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-07-02T20:03:56.620Z",
-    "total": 103,
-    "rawTotal": 135,
+    "generatedAt": "2026-07-03T04:22:28.922Z",
+    "total": 104,
+    "rawTotal": 141,
     "scope": "eu-relevant",
-    "droppedUsOnly": 30,
+    "droppedUsOnly": 35,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 54,
+        "count": 55,
         "ok": true,
-        "ms": 386234,
-        "fetched": 84
+        "ms": 499825,
+        "fetched": 90
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 49,
         "ok": true,
-        "ms": 49753,
+        "ms": 40984,
         "fetched": 51
       },
       {
@@ -27,12 +27,12 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 91713,
+        "ms": 91720,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 54,
+      "CPSC": 55,
       "Petzl": 1,
       "Skylotec": 1,
       "BlackDiamond": 8,
@@ -44,13 +44,13 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 29,
+      "PSAgA": 30,
       "Bergsport": 67,
       "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
-      "high": 31,
+      "high": 32,
       "medium": 71,
       "info": 1
     },
@@ -1315,6 +1315,40 @@
           "source": "ClimbingTechnology",
           "sourceLabel": "Climbing Technology",
           "url": "https://www.climbingtechnology.com/en/alerts/09-september-2019-up-lock"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:8632",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2019-08-07",
+      "manufacturer": "Seattle Manufacturing Corporation",
+      "title": "Seattle Manufacturing Corporation Recalls Ice Axes Due to Serious Injury and Fall Hazards",
+      "summary": "This recall involves Kobah Ice Axes of lengths 60, 65, 70 and 75 centimeters. The axes each have a steel pick and adze joined at the top of an orange aluminum handle shaft by a black polyamide resin head. There is a steel spike in the bottom of the handle shaft. \"Kobah,\" \"SMC\" and Manufacturer's Lot Number (MLN)…",
+      "hazard": "The spike and/or head of the ice axe can detach from the handle during use, posing serious injury and fall hazards to the climber.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Kobah Ice Axes"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1_37.png",
+        "https://www.cpsc.gov/s3fs-public/2_32.jpg"
+      ],
+      "manufacturerName": "SMC (Seattle Manufacturing)",
+      "manufacturerUrl": "https://www.smcgear.net",
+      "manufacturerHome": "https://www.smcgear.net",
+      "brandKey": "smc",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards"
         }
       ]
     },
