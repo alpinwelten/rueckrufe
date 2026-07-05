@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-07-05T04:35:21.489Z",
+    "generatedAt": "2026-07-05T09:26:20.106Z",
     "total": 104,
     "rawTotal": 141,
     "scope": "eu-relevant",
@@ -11,7 +11,7 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 14380,
+        "ms": 14249,
         "fetched": 90
       },
       {
@@ -19,7 +19,7 @@
         "label": "Hersteller-Seiten",
         "count": 49,
         "ok": true,
-        "ms": 36632,
+        "ms": 42554,
         "fetched": 51
       },
       {
