@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-07-13T04:06:29.857Z",
-    "total": 104,
-    "rawTotal": 141,
+    "generatedAt": "2026-07-13T09:50:18.557Z",
+    "total": 103,
+    "rawTotal": 140,
     "scope": "eu-relevant",
     "droppedUsOnly": 35,
     "sources": [
@@ -11,29 +11,28 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 17506,
+        "ms": 14758,
         "fetched": 90
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
-        "count": 49,
+        "count": 48,
         "ok": true,
-        "ms": 58847,
-        "fetched": 51
+        "ms": 46102,
+        "fetched": 50
       },
       {
         "key": "SafetyGate",
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 91712,
+        "ms": 2560,
         "fetched": 0
       }
     ],
     "bySource": {
       "CPSC": 55,
-      "Petzl": 1,
       "Skylotec": 1,
       "BlackDiamond": 8,
       "ClimbingTechnology": 13,
@@ -44,14 +43,14 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 30,
+      "PSAgA": 29,
       "Bergsport": 67,
       "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
       "high": 32,
-      "medium": 71,
+      "medium": 70,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -193,35 +192,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-Nomic-and-Ergonomic-Ice-Climbing-Axes-Due-to-Fall-Hazard-Risk-of-Serious-Injury-or-Death"
-        }
-      ]
-    },
-    {
-      "id": "Petzl:https://www.petzl.com/INT/en/Professional/safety-alerts/2026-02-23/ASTRO-and-CANYON-GUIDE-harness-safety-alert--Replacement-of-the-ventral-D-ring",
-      "source": "Petzl",
-      "sourceLabel": "Petzl",
-      "date": "2026-02-23",
-      "manufacturer": "Petzl",
-      "title": "ASTRO and CANYON GUIDE harness safety alert: Replacement of the ventral D-ring",
-      "summary": "",
-      "hazard": null,
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [],
-      "countries": [
-        "EU"
-      ],
-      "sourceUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts/2026-02-23/ASTRO-and-CANYON-GUIDE-harness-safety-alert--Replacement-of-the-ventral-D-ring",
-      "images": [],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "Petzl",
-          "sourceLabel": "Petzl",
-          "url": "https://www.petzl.com/INT/en/Professional/safety-alerts/2026-02-23/ASTRO-and-CANYON-GUIDE-harness-safety-alert--Replacement-of-the-ventral-D-ring"
         }
       ]
     },
