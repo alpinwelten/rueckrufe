@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-07-22T14:37:23.535Z",
-    "total": 74,
-    "rawTotal": 104,
+    "generatedAt": "2026-07-22T19:49:25.342Z",
+    "total": 103,
+    "rawTotal": 140,
     "scope": "eu-relevant",
-    "droppedUsOnly": 28,
+    "droppedUsOnly": 35,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 26,
+        "count": 55,
         "ok": true,
-        "ms": 500272,
-        "fetched": 54
+        "ms": 24804,
+        "fetched": 90
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 48,
         "ok": true,
-        "ms": 42613,
+        "ms": 36626,
         "fetched": 50
       },
       {
@@ -27,12 +27,12 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 91699,
+        "ms": 91726,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 26,
+      "CPSC": 55,
       "Skylotec": 1,
       "BlackDiamond": 8,
       "ClimbingTechnology": 13,
@@ -43,13 +43,14 @@
       "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 22,
-      "Bergsport": 49,
-      "Arbeitssicherheit": 3
+      "PSAgA": 29,
+      "Bergsport": 67,
+      "Arbeitssicherheit": 4,
+      "Sonstiges": 3
     },
     "bySeverity": {
-      "high": 13,
-      "medium": 60,
+      "high": 32,
+      "medium": 70,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -86,6 +87,75 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10775",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2026-05-14",
+      "manufacturer": "Petzl America",
+      "title": "Petzl America Recalls ASTRO BOD FAST, ASTRO SIT FAST and CANYON GUIDE Harnesses Due to Risk of Serious Injury or Death from Fall Hazard",
+      "summary": "This recall involves Petzl harnesses. The recalled harnesses were intended to be used by operators and work-at-height professionals. Serial numbers are printed on a label inside the harnesses' waist belt. All harnesses are offered in black with a yellow accent, except C083BA03, C083BA04 and C083BA05, which are…",
+      "hazard": "The recalled harness' D-ring can release, allowing the attachment point to open, posing a risk of serious injury or death from a fall hazard.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Petzl ASTRO BOD FAST, ASTRO SIT FAST and CANYON GUIDE harnesses"
+      ],
+      "countries": [
+        "Romania",
+        "Malaysia"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Picture9_10.jpg"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10684",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2026-04-02",
+      "manufacturer": "OCUN NA",
+      "title": "OCUN NA Recalls Condor HMS Triple Carabiners Due to Risk of Serious Injury or Death from Fall Hazard",
+      "summary": "This recall involves Ocun Condor HMS Triple Carabiners sold in dark gray and blue. The carabiners have an independent internal wire gate for belaying and rappelling and a triple locking action gate. The affected carabiners have the following batch numbers 24003xx, 24004xx, 24010xx, 24023xx, 24024xx, 24025xx, 25005xx,…",
+      "hazard": "The carabiner's gate can malfunction where the gate does not close automatically and has to be closed manually by hand, posing a risk of serious injury or death due to falling.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Ocun Condor HMS Triple Locking Carabiners"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/OCUN-NA-Recalls-Condor-HMS-Triple-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Picture24_1.png",
+        "https://www.cpsc.gov/s3fs-public/Picture25_1.png",
+        "https://www.cpsc.gov/s3fs-public/Picture26_1.png"
+      ],
+      "manufacturerName": "Ocún",
+      "manufacturerUrl": "https://www.ocun.com",
+      "manufacturerHome": "https://www.ocun.com",
+      "brandKey": "ocun",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2026/OCUN-NA-Recalls-Condor-HMS-Triple-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
         }
       ]
     },
@@ -151,6 +221,42 @@
           "source": "Skylotec",
           "sourceLabel": "SKYLOTEC",
           "url": "https://cdn-dotcom-prod.skylotec.com/media/3b/b3/a5/1768490926/Product_recall_BREASEY_20260115_DE_EN.pdf?ts=1768490926"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10389",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2025-08-28",
+      "manufacturer": "C.A.M.P.",
+      "title": "C.A.M.P. Recalls Nimbus Lock Carabiners Due to Risk of Serious Injury or Death from Fall",
+      "summary": "This recall involves Nimbus Lock Carabiners sold in Gun Metal/Green, Gun Metal/Fuchsia and Gun Metal/Blue. The affected carabiners were sold individually or as part of the Nimbus Lock 3 Pack, the Locker Draw KS, the Energy CR3 Pack and the Energy Nova Pack. Only the carabiners are included in this recall. The…",
+      "hazard": "The carabiner's automatic closing mechanism can break and prevent the gate from closing, posing a risk of serious injury or death due to falling.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Nimbus Lock Carabiners"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/CAMP-Recalls-Nimbus-Lock-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Nimbus-1.png",
+        "https://www.cpsc.gov/s3fs-public/Nimbus-2.png",
+        "https://www.cpsc.gov/s3fs-public/Nimbus-3.png",
+        "https://www.cpsc.gov/s3fs-public/Nimbus-4.png"
+      ],
+      "manufacturerName": "CAMP",
+      "manufacturerUrl": "https://www.camp.it/en/safety-notice",
+      "manufacturerHome": "https://www.camp.it",
+      "brandKey": "camp",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2025/CAMP-Recalls-Nimbus-Lock-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall"
         }
       ]
     },
@@ -225,6 +331,76 @@
       ]
     },
     {
+      "id": "CPSC:10189",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2025-03-06",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls BD Recon LT Avalanche Transceivers Due to Risk of Loss of Emergency Communications; Risk of Serious Injury or Death",
+      "summary": "This recall involves Black Diamond Recon LT avalanche transceivers. The transceivers are plastic with an LCD screen. They have a gray exterior and a blue top. The Black Diamond logo and model name \"RECON LT\" are on the front of the transceivers. The recalled transceivers were sold as standalone units and as part of…",
+      "hazard": "The metal contact in the switch mechanism of the Recon LT avalanche transceiver can corrode and cause the transceiver to malfunction. If this occurs, the device can turn off and make it impossible to locate a victim in an avalanche, which could result in serious injury or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "BD Recon LT Avalanche Transceivers"
+      ],
+      "countries": [
+        "Austria",
+        "Bosnia and Herzegovina"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Black-Diamond-Equipment-Recalls-BD-Recon-LT-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications-Risk-of-Serious-Injury-or-Death",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/black-diamond-1.png",
+        "https://www.cpsc.gov/s3fs-public/black-diamond-2.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2025/Black-Diamond-Equipment-Recalls-BD-Recon-LT-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications-Risk-of-Serious-Injury-or-Death"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10185",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2025-02-27",
+      "manufacturer": "ARVA",
+      "title": "ARVA Recalls NEO BT PRO Avalanche Transceivers Due to Risk of Loss of Emergency Transmission; Risk of Serious Injury or Death",
+      "summary": "This recall involves ARVA Neo BT Pro Avalanche Transceivers. The transceivers are black plastic with an LCD screen below a red mark button. NEO BT PRO is written on the left side of the device. The affected beacons have serial numbers NBP00052-1027 to NBP00287-1127 and NB00300-1127 to NB11675-0329. The serial number…",
+      "hazard": "A fuse within the avalanche transceiver can be defective and cause power to drain from the battery, posing a risk of loss of emergency communication which could result in serious injury or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "ARVA Neo BT Pro Avalanche Transceivers"
+      ],
+      "countries": [
+        "France"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/ARVA-Recalls-NEO-BT-PRO-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Transmission-Risk-of-Serious-Injury-or-Death",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/arva-1.png",
+        "https://www.cpsc.gov/s3fs-public/arva-2.png",
+        "https://www.cpsc.gov/s3fs-public/arva-3.png"
+      ],
+      "manufacturerName": "Arva",
+      "manufacturerUrl": "https://www.arva-equipment.com",
+      "manufacturerHome": "https://www.arva-equipment.com",
+      "brandKey": "arva",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2025/ARVA-Recalls-NEO-BT-PRO-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Transmission-Risk-of-Serious-Injury-or-Death"
+        }
+      ]
+    },
+    {
       "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/recon-lt-recall-2025",
       "source": "BlackDiamond",
       "sourceLabel": "Black Diamond",
@@ -250,6 +426,41 @@
           "source": "BlackDiamond",
           "sourceLabel": "Black Diamond",
           "url": "https://black-diamond-na.myshopify.com/pages/recon-lt-recall-2025"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10116",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2024-12-26",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls PIEPS Pro IPS Avalanche Transceivers Due to Risk of Loss of Emergency Communications",
+      "summary": "This recall involves all Black Diamond Equipment PIEPS Pro IPS Avalanche Transceivers. The transceivers are black plastic with an LCD screen below a yellow mark button. They measure about 5 inches long by 3 inches wide. PIEPS appears in yellow lettering and PRO IPS in white lettering on the front of the unit. The…",
+      "hazard": "The battery compartment within the avalanche transceiver could not have enough contact force to supply power. In some cases, the transceiver will fail to power on or cease operating during use. It would make it impossible to locate a victim in an avalanche emergency situation, which could result in serious injury or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "PIEPS Pro IPS Avalanche Transceivers"
+      ],
+      "countries": [
+        "Austria"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Black-Diamond-Equipment-Recalls-PIEPS-Pro-IPS-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Avalanche-Transceiver-1.png",
+        "https://www.cpsc.gov/s3fs-public/Avalanche-Transceiver-2.png",
+        "https://www.cpsc.gov/s3fs-public/Avalanche-Transceiver-3.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2025/Black-Diamond-Equipment-Recalls-PIEPS-Pro-IPS-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications"
         }
       ]
     },
@@ -286,6 +497,40 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2024/Petzl-America-Recalls-GYM-PANDION-and-PANJI-Climbing-Harnesses-Due-to-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9969",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2024-06-13",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls Neve Strap Crampons and Accessory Kits Due to Fall Hazard",
+      "summary": "This recall involves Neve Strap Crampons and Accessory Kits, Style No. 400073, with date codes 01-2021, 05-2022, 07-2023, 01-2024 and SS1271. The date codes are located on the rubber heel strap pull-tab and on the underside of the toe piece under the anti-balling plate. The products are made of aluminum plates with…",
+      "hazard": "The screws that connect the plastic heel cup to the aluminum heel unit of the crampon can loosen and allow the heel cup to detach from the crampon, posing a fall hazard.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Neve Strap Crampons and Accessory Kits"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2024/Black-Diamond-Equipment-Recalls-Neve-Strap-Crampons-and-Accessory-Kits-Due-to-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/neve-strap.png",
+        "https://www.cpsc.gov/s3fs-public/neve-strap-date-code.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2024/Black-Diamond-Equipment-Recalls-Neve-Strap-Crampons-and-Accessory-Kits-Due-to-Fall-Hazard"
         }
       ]
     },
@@ -415,6 +660,76 @@
       ]
     },
     {
+      "id": "CPSC:9604",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2023-04-27",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls Recon LT Avalanche Transceivers Due to Risk of Loss of Emergency Communication",
+      "summary": "This recall involves Black Diamond Recon LT avalanche transceivers, Black Diamond Alpine Avy Safety Sets and Black Diamond Recon LT Avy Safety Sets. The recalled transceivers were sold as a standalone unit and as part of an avalanche safety set. The transceivers are plastic with an LCD screen. They have a gray…",
+      "hazard": "The recalled transceivers can unexpectedly enter search mode due to interference from other beacons. If this occurs, the device could fail to transmit the position of survivors of an avalanche, resulting in delayed search and rescue operations, which could result in severe bodily harm or death if the skier is buried under snow.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Recon LT Avalanche Transceivers"
+      ],
+      "countries": [
+        "Austria",
+        "Bosnia"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2023/Black-Diamond-Equipment-Recalls-Recon-LT-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communication",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/black-diamond.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2023/Black-Diamond-Equipment-Recalls-Recon-LT-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communication"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9586",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2023-04-06",
+      "manufacturer": "Mammut Sports Group",
+      "title": "Mammut Sports Group Recalls Alugator Ride 3.0 Hoe and Alugator Ride SE Avalanche Shovels Due to Risk of Injury or Death",
+      "summary": "This recall involves Alugator Ride 3.0 Hoe and Alugator Ride SE shovels. The recalled shovels are used for digging out avalanche victims. The recalled shovels are made of aluminum, were sold in silver or black finishes and have orange handles. The recalled Alugator Ride 3.0 Hoe avalanche shovels were sold…",
+      "hazard": "The spring locking mechanism on the recalled avalanche shovels can fail in an emergency excavation of a person buried by an avalanche, posing a risk of injury or death for the buried person.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Alugator Ride 3.0 Hoe and Alugator Ride SE avalanche shovels"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2023/Mammut-Sports-Group-Recalls-Alugator-Ride-3-0-Hoe-and-Alugator-Ride-SE-Avalanche-Shovels-Due-to-Risk-of-Injury-or-Death",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Alugator-3-0-hoe-shovel.png",
+        "https://www.cpsc.gov/s3fs-public/Alugator-SE-shovel.png",
+        "https://www.cpsc.gov/s3fs-public/Alugator-shovel-box.png",
+        "https://www.cpsc.gov/s3fs-public/production-lot-number.png"
+      ],
+      "manufacturerName": "Mammut",
+      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
+      "manufacturerHome": "https://www.mammut.com",
+      "brandKey": "mammut",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2023/Mammut-Sports-Group-Recalls-Alugator-Ride-3-0-Hoe-and-Alugator-Ride-SE-Avalanche-Shovels-Due-to-Risk-of-Injury-or-Death"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/04-august-2022-anchor-cam",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -440,6 +755,75 @@
           "source": "ClimbingTechnology",
           "sourceLabel": "Climbing Technology",
           "url": "https://www.climbingtechnology.com/en/alerts/04-august-2022-anchor-cam"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9363",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2022-07-28",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls PIEPS and Black Diamond Avalanche Transceivers Due to Risk of Loss of Emergency Communications",
+      "summary": "This recall involves the PIEPS Pro BT, Powder BT, DSP Sport, DSP Pro, DSP Pro Ice, Micro BT Button, Micro BT Sensor and Micro BT Race avalanche transceivers and the Black Diamond branded Recon BT and Guide BT avalanche transceivers. All the transceivers are plastic with an LCD screen. They measure about 5 inches long…",
+      "hazard": "The recalled transceivers may not switch from SEND mode into SEARCH mode. If this were to occur, the device would not be able to locate a skier in an avalanche, which could result in severe bodily harm or death if the skier is buried under snow.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Avalanche Transceivers"
+      ],
+      "countries": [
+        "Bosnia and Herzegovina"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2022/Black-Diamond-Equipment-Recalls-PIEPS-and-Black-Diamond-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1_85.png",
+        "https://www.cpsc.gov/s3fs-public/2_71.png",
+        "https://www.cpsc.gov/s3fs-public/3_52.png",
+        "https://www.cpsc.gov/s3fs-public/4_43.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2022/Black-Diamond-Equipment-Recalls-PIEPS-and-Black-Diamond-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9317",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2022-06-02",
+      "manufacturer": "Backcountry Access, Inc.",
+      "title": "Elevate Outdoor Collective Recalls Backcountry Access Avalanche Transceivers Due to Risk of Loss of Emergency Communications",
+      "summary": "This recall involves the Backcountry Access Tracker4 Avalanche Transceiver sold in yellow and black. The transceiver has a digital screen on the front and is about five inches long and three inches wide. \"BCA\" and the model name \"Tracker4\" are printed on the front of the unit. The serial number for a transceiver is…",
+      "hazard": "The toggle switch can separate from the transceiver, and prevent the transceiver from switching to search mode, making it difficult to locate a skier in an avalanche, which can result in severe bodily harm or death if a skier is buried under snow.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Backcountry Access Tracker4 Avalanche Transceivers"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2022/Elevate-Outdoor-Collective-Recalls-Backcountry-Access-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recalled Backcountry Access Tracker4 Avalanche Transceiver.jpg"
+      ],
+      "manufacturerName": "Backcountry Access",
+      "manufacturerUrl": "https://backcountryaccess.com",
+      "manufacturerHome": "https://backcountryaccess.com",
+      "brandKey": "bca",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2022/Elevate-Outdoor-Collective-Recalls-Backcountry-Access-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications"
         }
       ]
     },
@@ -473,6 +857,39 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2022/Petzl-Recalls-PIRANA-Descender-Canyoneering-Devices-Due-to-Drowning-Risk"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9224",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2022-02-09",
+      "manufacturer": "Petzl",
+      "title": "Petzl Recalls Lanyards with Carabiners Due to Risk of Serious Injury or Death",
+      "summary": "This recall involves Petzl Scorpio Eashook lanyards with aluminum carabiners at the end of two retractable polyethylene arms. The lanyard, designed for via ferrata and adventure park use, supports up to 264 pounds. It measures about 30 inches un-retracted, about 43 inches extended and the short arm length is about 14…",
+      "hazard": "The carabiner's gate automatic closing system can malfunction, posing a risk of serious injury or death to the user.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Scorpio Eashook Lanyards with Carabiners"
+      ],
+      "countries": [
+        "France"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2022/Petzl-Recalls-Lanyards-with-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/pic-1_13.png"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2022/Petzl-Recalls-Lanyards-with-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death"
         }
       ]
     },
@@ -560,6 +977,42 @@
           "source": "ClimbingTechnology",
           "sourceLabel": "Climbing Technology",
           "url": "https://www.climbingtechnology.com/en/alerts/04-may-2021-easy-speed"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9036",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2021-04-12",
+      "manufacturer": "Pieps GMBH, of Austria",
+      "title": "Black Diamond Recalls PIEPS DSP Avalanche Transceivers Due to Risk of Loss of Emergency Communications; One Death Reported",
+      "summary": "This recall involves all PIEPS DSP Pro, DSP Pro Ice, and DSP Sport Avalanche Transceivers. The transceivers are worn by skiers so they can be located if they are buried in an avalanche. The units were sold in one size with an LCD display, a slider switch with Off/Search/Send, and are powered by a battery. The devices…",
+      "hazard": "The transceiver can switch modes unexpectedly when not locked or installed in the harness. When this occurs, it will prevent the transceiver from transmitting a signal and can make it difficult to locate a skier in an avalanche, which can result in severe bodily harm or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "PIEPS DSP Pro, DSP Pro Ice, and DSP Sport Avalanche Transceivers"
+      ],
+      "countries": [
+        "Austria"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2021/Black-Diamond-Recalls-PIEPS-DSP-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications-One-Death-Reported",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Picture1_97.png",
+        "https://www.cpsc.gov/s3fs-public/Picture2_80.png",
+        "https://www.cpsc.gov/s3fs-public/Picture3_54.png",
+        "https://www.cpsc.gov/s3fs-public/Picture4_34.png"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2021/Black-Diamond-Recalls-PIEPS-DSP-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications-One-Death-Reported"
         }
       ]
     },
@@ -684,6 +1137,42 @@
       ]
     },
     {
+      "id": "CPSC:8913",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2020-09-30",
+      "manufacturer": "Petzl",
+      "title": "Petzl Recalls Safety Ropes Due to Fall and Injury Hazard",
+      "summary": "The recalled low-stretch kernmantle ropes are designed for professional use, including work-at-height use, difficult access, technical rescue and industrial applications; and for recreational use, including climbing, caving and mountaineering. The ropes have a nylon core and polyester sheath material. Only ropes with…",
+      "hazard": "The rope can have a deep cut or tape securing two ends of rope together, which can cause the rope to fail, posing fall and injury hazards to the user.",
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [
+        "Low-Stretch Kernmantle Ropes"
+      ],
+      "countries": [
+        "France"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2020/Petzl-Recalls-Safety-Ropes-Due-to-Fall-and-Injury-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1-93203AM.png",
+        "https://www.cpsc.gov/s3fs-public/2-93210AM.png",
+        "https://www.cpsc.gov/s3fs-public/3-93216AM.png",
+        "https://www.cpsc.gov/s3fs-public/4-93244AM.png"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2020/Petzl-Recalls-Safety-Ropes-Due-to-Fall-and-Injury-Hazard"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/17-september-2020-finch",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -800,6 +1289,40 @@
       ]
     },
     {
+      "id": "CPSC:8632",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2019-08-07",
+      "manufacturer": "Seattle Manufacturing Corporation",
+      "title": "Seattle Manufacturing Corporation Recalls Ice Axes Due to Serious Injury and Fall Hazards",
+      "summary": "This recall involves Kobah Ice Axes of lengths 60, 65, 70 and 75 centimeters. The axes each have a steel pick and adze joined at the top of an orange aluminum handle shaft by a black polyamide resin head. There is a steel spike in the bottom of the handle shaft. \"Kobah,\" \"SMC\" and Manufacturer's Lot Number (MLN)…",
+      "hazard": "The spike and/or head of the ice axe can detach from the handle during use, posing serious injury and fall hazards to the climber.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Kobah Ice Axes"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1_37.png",
+        "https://www.cpsc.gov/s3fs-public/2_32.jpg"
+      ],
+      "manufacturerName": "SMC (Seattle Manufacturing)",
+      "manufacturerUrl": "https://www.smcgear.net",
+      "manufacturerHome": "https://www.smcgear.net",
+      "brandKey": "smc",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards"
+        }
+      ]
+    },
+    {
       "id": "DMM:https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection",
       "source": "DMM",
       "sourceLabel": "DMM",
@@ -825,6 +1348,76 @@
           "source": "DMM",
           "sourceLabel": "DMM",
           "url": "https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:8355",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2018-07-10",
+      "manufacturer": "Ortovox, of Germany",
+      "title": "ORTOVOX Recalls Avalanche Transceivers Due to Loss of Emergency Communications Capability",
+      "summary": "This recall involves Ortovox avalanche transceivers, model numbers 1137000006, 1137000001 and 1137000002. They were sold in black/blue (model number 1137000006), black/black (model number 1137000001) and neon green (model number 1137000002). The transceiver is used as a beacon to locate an individual in the event of…",
+      "hazard": "The transceiver can fail to work properly due to a software error and fail to transmit the position of survivors of an avalanche, resulting in delayed search and rescue operations.",
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [
+        "Avalanche transceivers"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2018/ORTOVOX-Recalls-Avalanche-Transceivers-Due-to-Loss-of-Emergency-Communications-Capability",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1072_1.png",
+        "https://www.cpsc.gov/s3fs-public/1072_2.png",
+        "https://www.cpsc.gov/s3fs-public/1072_3.png"
+      ],
+      "manufacturerName": "ORTOVOX",
+      "manufacturerUrl": "https://www.ortovox.com",
+      "manufacturerHome": "https://www.ortovox.com",
+      "brandKey": "ortovox",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2018/ORTOVOX-Recalls-Avalanche-Transceivers-Due-to-Loss-of-Emergency-Communications-Capability"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:8187",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2017-11-21",
+      "manufacturer": "Omega Pacific Inc., of Airway Heights, Wash.",
+      "title": "Omega Pacific Recalls Carabiners Due to Risk of Injury or Death",
+      "summary": "This recall involves six models of Omega Pacific G-FIRST series aluminum carabiners. They are typically used to allow ropes and harnesses to be linked together. \"Omega-17 UL Classified USA\" is printed on the front and \"Meets NFPA 1983 17ED MBS kN 40 G\" statement is located on the back side. The 2-digit lot code \"OD\"…",
+      "hazard": "The carabiner can break while in use, posing a risk of injury or death to the user.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Carabiners"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2018/Omega-Pacific-Recalls-Carabiners-Due-to-Risk-of-Injury-or-Death",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Front side of the recalled G-FIRST series carabiners.jpg",
+        "https://www.cpsc.gov/s3fs-public/Back side of the recalled G-FIRST series carabiners.jpg",
+        "https://www.cpsc.gov/s3fs-public/Location for Lot Code on carabiner spine.jpg"
+      ],
+      "manufacturerName": "Omega Pacific",
+      "manufacturerUrl": "https://www.omegapacific.com",
+      "manufacturerHome": "https://www.omegapacific.com",
+      "brandKey": "omegapacific",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2018/Omega-Pacific-Recalls-Carabiners-Due-to-Risk-of-Injury-or-Death"
         }
       ]
     },
@@ -1003,6 +1596,42 @@
       ]
     },
     {
+      "id": "CPSC:6689",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2016-03-30",
+      "manufacturer": "Black Diamond",
+      "title": "Black Diamond Recalls Nylon Runners Due to Fall Hazard",
+      "summary": "This recall involves Black Diamond 18 mm wide nylon runners that are 60 cm/24 inches or 120 cm/48 inches long that have a tape splice (two cut ends joined by masking tape). The nylon runners were sold in red, blue, gold, green, gray and purple. \"CE 0333\" and 2014 or 2015 are printed on the sewn-in label.",
+      "hazard": "A nylon runner with a tape splice (two cut ends joined by masking tape) will fail in normal use, posing a risk of death or injury due to a fall.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Nylon Runners"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Nylon-Runners",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.TapeSliceInTheNylonRunner.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.BlackDiamondNylonRunners.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.WarningLabelOnTheNylonRunne.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16132.WarningLabelOnTheNylonRunners2015.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Nylon-Runners"
+        }
+      ]
+    },
+    {
       "id": "CPSC:6490",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1071,6 +1700,76 @@
       ]
     },
     {
+      "id": "CPSC:6439",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2015-07-09",
+      "manufacturer": "Unbekannt",
+      "title": "JetForce Avalanche Airbag Packs Recalled by Black Diamond Due to Risk of Injury",
+      "summary": "This recall involves all first generation JetForce Black Diamond, Pieps and POC model airbag packs manufactured by Black Diamond between October 2, 2014 and March 3, 2015. The manufacture date code ranging from 14275 to 15077 can be found inside the front pocket label. The date codes are listed in a YYDDD format.…",
+      "hazard": "The motor can malfunction and prevent the airbag from deploying, increasing the risk of injury or death in the event of a snow avalanche.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Black Diamond, Pieps and POC Brand JetForce Avalanche Airbag Packs"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2015/JetForce-Avalanche-Airbag-Packs-Recalled-by-Black-Diamond",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15181.BlackDiamondPilot11.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15181.one-bag-4.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15181.one-bag-5.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15181.one-bag-2.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2015/JetForce-Avalanche-Airbag-Packs-Recalled-by-Black-Diamond"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:6409",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2015-06-02",
+      "manufacturer": "ORTOVOX",
+      "title": "ORTOVOX Recalls Avalanche Transceiver Due to Loss of Emergency Communications Capability",
+      "summary": "The ORTOVOX S1+ transceiver is used as a beacon to locate an individual in the event of avalanche burial. The flip-case design transceiver is black with green accent stripes on the top sides. ORTOVOX and S1+ are printed on the top of the device. In the open/receive position the top half of the transceiver displays a…",
+      "hazard": "The S1+ hardware can fail, resulting in an inability to transmit a discoverable signal during an emergency situation, even as the unit appears to be powered on and functioning properly.",
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [
+        "ORTOVOX S1+ Avalanche Transceiver"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2015/ORTOVOX-Recalls-S1-Avalanche-Transceiver",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15154.15154_01.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15154.15154_02.jpg"
+      ],
+      "manufacturerName": "ORTOVOX",
+      "manufacturerUrl": "https://www.ortovox.com",
+      "manufacturerHome": "https://www.ortovox.com",
+      "brandKey": "ortovox",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2015/ORTOVOX-Recalls-S1-Avalanche-Transceiver"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/february-2015-ice-crampons",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -1125,6 +1824,42 @@
           "source": "DMM",
           "sourceLabel": "DMM",
           "url": "https://dmmwales.com/pages/dmm-product-recall"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:1862",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2014-11-18",
+      "manufacturer": "Black Diamond Equipment",
+      "title": "Black Diamond Equipment Recalls Whippet Ski Poles Due to Risk of Injury",
+      "summary": "This recall includes Black Diamond Whippet and Whippet Carbon ski poles manufactured May 2013 through January 2014. The Whippet is gray with two telescoping shafts and the Carbon Whippet is black with three telescoping shafts. The upper shaft of both models is made of aluminum and has a black and orange rubber…",
+      "hazard": "The stainless steel pick in the handgrip can break and fail to slow or stop users from sliding downhill on a snow or ice covered slope, posing a risk of injury.",
+      "severity": "medium",
+      "category": "Arbeitssicherheit",
+      "products": [
+        "Ski poles"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2015/Black-Diamond-Equipment-Recalls-Whippet-Ski-Poles",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.1-WhippetLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.2-CarbonWhippetLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.3-WhippetRecalledPickLARGE.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2015.15028.4WhippetDateLocsLARGE.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2015/Black-Diamond-Equipment-Recalls-Whippet-Ski-Poles"
         }
       ]
     },
@@ -1223,6 +1958,40 @@
           "source": "BlackDiamond",
           "sourceLabel": "Black Diamond",
           "url": "https://black-diamond-na.myshopify.com/pages/2014-whippet-recall"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:1554",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2013-11-26",
+      "manufacturer": "Unbekannt",
+      "title": "Avalanche Airbags Recalled by Backcountry Access Due to Risk of Injury",
+      "summary": "This recall involves BCA Avalanche airbags, models Float 18, 22, 30, 32, 36 and Throttle. The airbags are used for skiing, snowmobiling and mountain climbing to help keep the user above the surface if an avalanche occurs. The airbags are yellow and are housed in a blue, red or black pack. The packs have the model…",
+      "hazard": "The trigger assembly can fail resulting in the airbag not deploying, posing a risk of death and injury in the event of an avalanche.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Avalanche airbags"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2014/Avalanche-Airbags-Recalled-by-Backcountry-Access",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2014.14030.LARGEPackWithLotLetterLocation.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2014.14030.LARGEFloat22blue.jpg"
+      ],
+      "manufacturerName": "Backcountry Access",
+      "manufacturerUrl": "https://backcountryaccess.com",
+      "manufacturerHome": "https://backcountryaccess.com",
+      "brandKey": "bca",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2014/Avalanche-Airbags-Recalled-by-Backcountry-Access"
         }
       ]
     },
@@ -1351,6 +2120,77 @@
       ]
     },
     {
+      "id": "CPSC:720",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2011-07-12",
+      "manufacturer": "Petzl America",
+      "title": "Petzl America Recalls Scorpio and Absorbica Safety Lanyards due to Fall Hazard",
+      "summary": "This recall affects all Scorpio and Absorbica lanyards manufactured before May 2011. Scorpio: Affected Scorpio lanyards manufactured between 2002 and 2005 are model numbers L60 and L60 CK. These are yellow and blue, Y-shaped lanyards with yellow stitching on both ends. They are connected by a metal O-ring to one end…",
+      "hazard": "Some lanyards are missing a safety stitch on the attachment loop, which can cause the lanyard to disconnect from the climbing harness, posing a fall hazard to consumers.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Scorpio and Absorbica Shock Absorbing Lanyards"
+      ],
+      "countries": [
+        "France"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Scorpio-and-Absorbica-Safety-Lanyards-due-to-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276a.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276b.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276c.jpg"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Scorpio-and-Absorbica-Safety-Lanyards-due-to-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:549",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2011-01-05",
+      "manufacturer": "Black Diamond Equipment, Ltd. of Salt Lake City, Utah",
+      "title": "Avalung Backpacks Recalled by Black Diamond Equipment Due to Suffocation Hazard",
+      "summary": "This recall involves the following Black Diamond 2010 Avalung backpacks (see chart below). These backpacks have an air intake system that the company states extracts air from the snow, allowing the victim of an avalanche to breathe while buried under the snow. The model name and color are printed on the side of the…",
+      "hazard": "The air intake tubing can crack under cold temperatures, causing the unit not to function as intended, posing a suffocation hazard.",
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [
+        "Avalung backpacks"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2011/Avalung-Backpacks-Recalled-by-Black-Diamond-Equipment-Due-to-Suffocation-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084a.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084b.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084c.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11084.11084d.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2011/Avalung-Backpacks-Recalled-by-Black-Diamond-Equipment-Due-to-Suffocation-Hazard"
+        }
+      ]
+    },
+    {
       "id": "DMM:https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
       "source": "DMM",
       "sourceLabel": "DMM",
@@ -1472,6 +2312,42 @@
       ]
     },
     {
+      "id": "CPSC:4457",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2008-09-18",
+      "manufacturer": "Petzl S.A., of Crolles, France",
+      "title": "Safety Alert: Petzl America Warns of Burn Hazard from Headlamps; Product Should Only Be Used with Non-Rechargeable Batteries",
+      "summary": "This safety alert involves the \"MYO\" and \"MYO Belt\" headlamps with name and model numbers listed below. The \"MYO\" headlamps have a battery pack attached to the headband. The \"MYO Belt\" headlamps have a remote battery pack attached to the headlamp via a long electric cable. Name Model Number MYO E26P MYO-black E26PN…",
+      "hazard": "If the headlamp is used with rechargeable batteries, the cable connecting the battery pack to the lamp can spark, melt, or catch fire. This poses a burn hazard to consumers.",
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [
+        "MYO and \"MYO Belt\" Headlamps"
+      ],
+      "countries": [
+        "France"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2008/Safety-Alert-Petzl-America-Warns-of-Burn-Hazard-from-Headlamps-Product-Should-Only-Be-Used-with-Non-Rechargeable-Batteries",
+      "images": [
+        "https://www.cpsc.gov/~/link/d099d148d366400b825632ead8530b1a.jpg",
+        "https://www.cpsc.gov/~/link/eb7178e3900f4a45bae7fc8f20df8512.jpg",
+        "https://www.cpsc.gov/~/link/4eaf1e7644f44559bf94b274e913411a.jpg",
+        "https://www.cpsc.gov/~/link/69281015141547c8853ad7ca5334c3f7.jpg"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2008/Safety-Alert-Petzl-America-Warns-of-Burn-Hazard-from-Headlamps-Product-Should-Only-Be-Used-with-Non-Rechargeable-Batteries"
+        }
+      ]
+    },
+    {
       "id": "CPSC:4051",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1541,6 +2417,74 @@
       ]
     },
     {
+      "id": "CPSC:3387",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2005-12-16",
+      "manufacturer": "Calzaturifico S.C.A.R.P.A. S.P.A., of Italy",
+      "title": "CPSC, Black Diamond Equipment Announce Recall of Scarpa T2X Telemark Ski Boots",
+      "summary": "The two recalled models of T2X Telemark ski boot can be identified by a dual color ankle cuff and the marking T2X on the outside of each boot (boxes are marked with model numbers: 142045 Men's and 142046). Repaired or replaced product can be identified by a single color cuff: Men's cuffs are red, women's cuffs are…",
+      "hazard": "The plastic boot cuff can crack when flexed open in an unbuckled non-skiing position, causing discomfort on the ankle or shin, making the problem evident prior to skiing and thus unsuitable for use.",
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [
+        "Scarpa T2X Telemark Ski Boots"
+      ],
+      "countries": [
+        "Italy"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2006/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Scarpa-T2X-Telemark-Ski-Boots",
+      "images": [
+        "https://www.cpsc.gov/~/link/eaf7a46d2d7f47e891d25fc0facfd8d3.jpg",
+        "https://www.cpsc.gov/~/link/50880c0d9a0a484297a8ea8a86d89f8a.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2006/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Scarpa-T2X-Telemark-Ski-Boots"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:3017",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2005-09-15",
+      "manufacturer": "Ortovox USA, of Hopkinton, N.H.",
+      "title": "CPSC, Ortovox USA Announce Recall of Avalanche Transceivers",
+      "summary": "Both models of avalanche transceivers are plastic and measure 5.5 inches by 2.5 inches by 1 inch. The M1 has a navy blue body and a yellow volume control switch. The M2 avalanche transceiver comes in two colors: glacier white (gray) with a red volume control switch, and orange with a gray volume control switch. The…",
+      "hazard": "The batteries in these devices can become dislodged when the transceiver is struck sharply. The transceiver could fail to function properly in the aftermath of an avalanche, and result in the buried victim not being found in time to avoid serious injury or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Ortovox M1 and M2 Avalanche Transceivers - A device worn to help locate a buried avalanche victim"
+      ],
+      "countries": [
+        "Germany"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2005/CPSC-Ortovox-USA-Announce-Recall-of-Avalanche-Transceivers",
+      "images": [
+        "https://www.cpsc.gov/~/link/73b70f555c9b44bca0296cdfb214d78d.jpg",
+        "https://www.cpsc.gov/~/link/6f8c7261ba1443199b4373717a76cade.jpg"
+      ],
+      "manufacturerName": "ORTOVOX",
+      "manufacturerUrl": "https://www.ortovox.com",
+      "manufacturerHome": "https://www.ortovox.com",
+      "brandKey": "ortovox",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Ortovox-USA-Announce-Recall-of-Avalanche-Transceivers"
+        }
+      ]
+    },
+    {
       "id": "CPSC:3104",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1571,6 +2515,72 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2005/CPSC-MSA-Announce-Recall-of-Climbing-Wall-Descenders-"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:3054",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2005-01-13",
+      "manufacturer": "Ascom Systec AG, Eichtal, of Switzerland",
+      "title": "CPSC, Climb High Inc. Announce Recall of Avalanche Transceivers",
+      "summary": "The recalled Barryvoxes are 2004/2005 model Opto 3000 Avalanche Transceivers. The words, \"Mammut\" and \"Barryvox\" are printed on the front of the red and black transceivers. The serial numbers on the recalled units, which can be found in the battery compartment under the UPC code, include: M0080000 through M0088419,…",
+      "hazard": "The transceiver's plastic casing could crack, causing a malfunction, if water were to enter the unit. If the transceiver fails to function properly in the aftermath of an avalanche, it could result in the buried victim not being found in time to avoid serious injury or death.",
+      "severity": "high",
+      "category": "Bergsport",
+      "products": [
+        "Mammut Barryvox Avalanche Transceivers - A device worn by backcountry skiers, and used to help locate a buried avalanche victim"
+      ],
+      "countries": [
+        "Switzerland"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2005/CPSC-Climb-High-Inc-Announce-Recall-of-Avalanche-Transceivers-",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/mamaut.jpg"
+      ],
+      "manufacturerName": "Mammut",
+      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
+      "manufacturerHome": "https://www.mammut.com",
+      "brandKey": "mammut",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Climb-High-Inc-Announce-Recall-of-Avalanche-Transceivers-"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:2818",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2004-11-09",
+      "manufacturer": "Black Diamond Equipment Ltd., of Salt Lake City, Utah",
+      "title": "CPSC, Black Diamond Equipment Announce Recall of Headlamp Batteries",
+      "summary": "The recalled batteries are found in Black Diamond Soliras headlamps. The batteries have the following dates, which can be found on the battery label: 0703, 0803, 0903, 1003, 1103, 1203, 0104, 0204, 0304, 0404, and 0504. The black headlamp has the words and symbol for the company on the light.",
+      "hazard": "The headlamp battery may overheat, posing a burn or fire hazard to users.",
+      "severity": "medium",
+      "category": "Sonstiges",
+      "products": [
+        "Soliras Headlamp Lithium-ion Batteries"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2005/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Headlamp-Batteries-",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/black-diamond-headlamp.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Black-Diamond-Equipment-Announce-Recall-of-Headlamp-Batteries-"
         }
       ]
     },
