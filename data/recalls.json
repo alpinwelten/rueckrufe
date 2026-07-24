@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-07-23T14:36:25.173Z",
-    "total": 84,
-    "rawTotal": 119,
+    "generatedAt": "2026-07-24T03:57:02.199Z",
+    "total": 70,
+    "rawTotal": 78,
     "scope": "eu-relevant",
-    "droppedUsOnly": 35,
+    "droppedUsOnly": 8,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 55,
+        "count": 41,
         "ok": true,
-        "ms": 33349,
-        "fetched": 90
+        "ms": 570198,
+        "fetched": 49
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 29,
         "ok": true,
-        "ms": 13778,
+        "ms": 12836,
         "fetched": 29
       },
       {
@@ -27,97 +27,29 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1662,
+        "ms": 1665,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 55,
+      "CPSC": 41,
       "ClimbingTechnology": 13,
       "Edelrid": 16
     },
     "byCategory": {
-      "PSAgA": 28,
-      "Bergsport": 52,
+      "PSAgA": 19,
+      "Bergsport": 48,
       "Arbeitssicherheit": 1,
-      "Sonstiges": 3
+      "Sonstiges": 2
     },
     "bySeverity": {
-      "high": 31,
-      "medium": 52,
+      "high": 23,
+      "medium": 46,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
   },
   "recalls": [
-    {
-      "id": "CPSC:10774",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2026-05-14",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls SIMBA and SWAN EASYFIT Harnesses Due to Risk of Serious Injury or Death from Fall Hazard",
-      "summary": "This recall involves Petzl harnesses sold individually and in packs of five. Serial numbers are printed on plastic cards on the interior of the harnesses. All harnesses are offered in gray/orange color combinations. Harnesses included in the recall include: Recalled Harness Name Harness Serial Number/Size SIMBA…",
-      "hazard": "The recalled harnesses are missing rivets in the FAST LT PIN-LOCK buckles, causing the buckles to open, posing a risk of serious injury or death from a fall hazard.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Petzl SIMBA CLIMBING and SIMBA PARK Children's Harnesses, SWAN EASYFIT STEEL and SWAN EASYFIT STAINLESS Harnesses"
-      ],
-      "countries": [
-        "Romania"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Picture1_166.png",
-        "https://www.cpsc.gov/s3fs-public/Picture2_132.png"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:10775",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2026-05-14",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls ASTRO BOD FAST, ASTRO SIT FAST and CANYON GUIDE Harnesses Due to Risk of Serious Injury or Death from Fall Hazard",
-      "summary": "This recall involves Petzl harnesses. The recalled harnesses were intended to be used by operators and work-at-height professionals. Serial numbers are printed on a label inside the harnesses' waist belt. All harnesses are offered in black with a yellow accent, except C083BA03, C083BA04 and C083BA05, which are…",
-      "hazard": "The recalled harness' D-ring can release, allowing the attachment point to open, posing a risk of serious injury or death from a fall hazard.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Petzl ASTRO BOD FAST, ASTRO SIT FAST and CANYON GUIDE harnesses"
-      ],
-      "countries": [
-        "Romania",
-        "Malaysia"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Picture9_10.jpg"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
-        }
-      ]
-    },
     {
       "id": "CPSC:10684",
       "source": "CPSC",
@@ -154,42 +86,6 @@
       ]
     },
     {
-      "id": "CPSC:10677",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2026-03-26",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls Nomic and Ergonomic Ice Climbing Axes Due to Fall Hazard; Risk of Serious Injury or Death",
-      "summary": "This recall involves the Petzl Nomic ice climbing axes (model U021AA00, serial numbers 17L 0000000 000 to 20F 9999999 999) and Ergonomic ice climbing axes (model U022AA00, serial numbers 18F 0000000 000 to 21L 9999999 999). The axes are made from an aluminum shaft, steel pick and reinforced plastic grip. Nomic axes…",
-      "hazard": "The ice axe shaft can break at the handle during use, posing a fall hazard, which can result in serious injury or death.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Nomic and Ergonomic Ice Climbing Axes"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-Nomic-and-Ergonomic-Ice-Climbing-Axes-Due-to-Fall-Hazard-Risk-of-Serious-Injury-or-Death",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Updated_U021AA00-NOMIC_HighRes.jpg",
-        "https://www.cpsc.gov/s3fs-public/Updated_U022AA00-ERGONOMIC_HighRes.jpg",
-        "https://www.cpsc.gov/s3fs-public/nomic-3.gif",
-        "https://www.cpsc.gov/s3fs-public/nomic-4.gif"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-Nomic-and-Ergonomic-Ice-Climbing-Axes-Due-to-Fall-Hazard-Risk-of-Serious-Injury-or-Death"
-        }
-      ]
-    },
-    {
       "id": "CPSC:10389",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -222,42 +118,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2025/CAMP-Recalls-Nimbus-Lock-Carabiners-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:10308",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2025-06-12",
-      "manufacturer": "Mammut Sports Group",
-      "title": "Mammut Sports Group Recalls Skywalker Pro Via Ferrata Sets Due to Risk of Serious Injury or Death from Fall Hazard",
-      "summary": "This recall involves Skywalker Pro Via Ferrata Sets used to assist during mountain and rock climbing. The product has a blue cord with an orange and gray colored carabiner. Only model numbers 2040-02840, 2040-02850 and 2040-02870 are included in this recall. The model numbers can be found on a tag inside the pouch.",
-      "hazard": "The carabiner can be opened without engaging the safety latch, posing a risk of serious injury or death due to fall hazard.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Skywalker Pro Via Ferrata Sets, Skywalker Pro Turn Via Ferrata Sets and Skywalker Pro Via Ferrata Packages"
-      ],
-      "countries": [
-        "Switzerland"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2025/Mammut-Sports-Group-Recalls-Skywalker-Pro-Via-Ferrata-Sets-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Mammut-1.jpg",
-        "https://www.cpsc.gov/s3fs-public/Mammut-2.jpg",
-        "https://www.cpsc.gov/s3fs-public/Mammut-3.jpg",
-        "https://www.cpsc.gov/s3fs-public/Mammut-4.jpg"
-      ],
-      "manufacturerName": "Mammut",
-      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
-      "manufacturerHome": "https://www.mammut.com",
-      "brandKey": "mammut",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2025/Mammut-Sports-Group-Recalls-Skywalker-Pro-Via-Ferrata-Sets-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
         }
       ]
     },
@@ -397,42 +257,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2025/Black-Diamond-Equipment-Recalls-PIEPS-Pro-IPS-Avalanche-Transceivers-Due-to-Risk-of-Loss-of-Emergency-Communications"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:10045",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2024-09-12",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls GYM, PANDION and PANJI Climbing Harnesses Due to Fall Hazard",
-      "summary": "This recall involves three Petzl climbing harnesses: the GYM harness (Model No. C032AA00), the PANDION harness (Model Nos. C029AA00 and C029AA01), and the PANJI harness (Model No. C028AA00). The recalled harnesses were used by operators of climbing gyms, adventure parks, guide companies, and consumers. Serial numbers…",
-      "hazard": "The recalled harness can be put on backwards and the rope or carabiner can be attached to a non-weight-bearing leg loop elastic band, placing the user at risk of falling from height and sustaining serious injury, including paraplegia or death.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Petzl GYM, PANDION and PANJI climbing harnesses"
-      ],
-      "countries": [
-        "Malaysia"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2024/Petzl-America-Recalls-GYM-PANDION-and-PANJI-Climbing-Harnesses-Due-to-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/gym-harness.png",
-        "https://www.cpsc.gov/s3fs-public/pandion-harness.png",
-        "https://www.cpsc.gov/s3fs-public/panji-harness.png",
-        "https://www.cpsc.gov/s3fs-public/harness-serial-numbers.png"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2024/Petzl-America-Recalls-GYM-PANDION-and-PANJI-Climbing-Harnesses-Due-to-Fall-Hazard"
         }
       ]
     },
@@ -735,39 +559,6 @@
       ]
     },
     {
-      "id": "CPSC:9253",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2022-03-02",
-      "manufacturer": "Petzl",
-      "title": "Petzl Recalls PIRANA Descender Canyoneering Devices Due to Drowning Risk",
-      "summary": "This recall involves the Petzl PIRANA descender, an aluminum adjustable friction descender device for canyoneering. The descender has three rope installation options that allow the user to select the degree of friction before initiating a descent. A friction spur allows the user to increase braking power during…",
-      "hazard": "The user's rope can get caught or wedged in the PIRANA blocking slot and stop or suspend the climber, posing a drowning risk if they are under a waterfall or pool.",
-      "severity": "medium",
-      "category": "Bergsport",
-      "products": [
-        "PIRANA descender canyoneering devices"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2022/Petzl-Recalls-PIRANA-Descender-Canyoneering-Devices-Due-to-Drowning-Risk",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/pic---1_0.png"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2022/Petzl-Recalls-PIRANA-Descender-Canyoneering-Devices-Due-to-Drowning-Risk"
-        }
-      ]
-    },
-    {
       "id": "CPSC:9224",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -957,42 +748,6 @@
       ]
     },
     {
-      "id": "CPSC:8913",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2020-09-30",
-      "manufacturer": "Petzl",
-      "title": "Petzl Recalls Safety Ropes Due to Fall and Injury Hazard",
-      "summary": "The recalled low-stretch kernmantle ropes are designed for professional use, including work-at-height use, difficult access, technical rescue and industrial applications; and for recreational use, including climbing, caving and mountaineering. The ropes have a nylon core and polyester sheath material. Only ropes with…",
-      "hazard": "The rope can have a deep cut or tape securing two ends of rope together, which can cause the rope to fail, posing fall and injury hazards to the user.",
-      "severity": "medium",
-      "category": "Bergsport",
-      "products": [
-        "Low-Stretch Kernmantle Ropes"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2020/Petzl-Recalls-Safety-Ropes-Due-to-Fall-and-Injury-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/1-93203AM.png",
-        "https://www.cpsc.gov/s3fs-public/2-93210AM.png",
-        "https://www.cpsc.gov/s3fs-public/3-93216AM.png",
-        "https://www.cpsc.gov/s3fs-public/4-93244AM.png"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2020/Petzl-Recalls-Safety-Ropes-Due-to-Fall-and-Injury-Hazard"
-        }
-      ]
-    },
-    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/17-september-2020-finch",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -1109,40 +864,6 @@
       ]
     },
     {
-      "id": "CPSC:8632",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2019-08-07",
-      "manufacturer": "Seattle Manufacturing Corporation",
-      "title": "Seattle Manufacturing Corporation Recalls Ice Axes Due to Serious Injury and Fall Hazards",
-      "summary": "This recall involves Kobah Ice Axes of lengths 60, 65, 70 and 75 centimeters. The axes each have a steel pick and adze joined at the top of an orange aluminum handle shaft by a black polyamide resin head. There is a steel spike in the bottom of the handle shaft. \"Kobah,\" \"SMC\" and Manufacturer's Lot Number (MLN)…",
-      "hazard": "The spike and/or head of the ice axe can detach from the handle during use, posing serious injury and fall hazards to the climber.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Kobah Ice Axes"
-      ],
-      "countries": [
-        "United States"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/1_37.png",
-        "https://www.cpsc.gov/s3fs-public/2_32.jpg"
-      ],
-      "manufacturerName": "SMC (Seattle Manufacturing)",
-      "manufacturerUrl": "https://www.smcgear.net",
-      "manufacturerHome": "https://www.smcgear.net",
-      "brandKey": "smc",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards"
-        }
-      ]
-    },
-    {
       "id": "CPSC:8355",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1247,40 +968,6 @@
       ]
     },
     {
-      "id": "CPSC:6738",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2016-05-19",
-      "manufacturer": "Black Diamond",
-      "title": "Black Diamond Recalls Camming Climbing Devices Due to Fall Hazard",
-      "summary": "This recall involves all sizes of Black Diamond Camalot and Camalot Ultralight camming devices. The climbing devices are used to secure ropes while rock climbing. The Camalots were sold in sizes 0.3 to 6 and have manufacturing codes from 5133 to 6067. The Camalot Ultralights were sold in sizes 0.4 to 4 and have…",
-      "hazard": "The camming devices can come apart during use and fail, posing a fall hazard to the consumer.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Black Diamond Camalot climbing devices"
-      ],
-      "countries": [
-        "United States"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/16168a.jpg",
-        "https://www.cpsc.gov/s3fs-public/16168b.jpg"
-      ],
-      "manufacturerName": "Black Diamond",
-      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
-      "manufacturerHome": "https://www.blackdiamondequipment.com",
-      "brandKey": "blackdiamond",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices"
-        }
-      ]
-    },
-    {
       "id": "CPSC:6737",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1312,6 +999,40 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Climbing-Ascenders"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:6738",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2016-05-19",
+      "manufacturer": "Black Diamond",
+      "title": "Black Diamond Recalls Camming Climbing Devices Due to Fall Hazard",
+      "summary": "This recall involves all sizes of Black Diamond Camalot and Camalot Ultralight camming devices. The climbing devices are used to secure ropes while rock climbing. The Camalots were sold in sizes 0.3 to 6 and have manufacturing codes from 5133 to 6067. The Camalot Ultralights were sold in sizes 0.4 to 4 and have…",
+      "hazard": "The camming devices can come apart during use and fail, posing a fall hazard to the consumer.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Black Diamond Camalot climbing devices"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/16168a.jpg",
+        "https://www.cpsc.gov/s3fs-public/16168b.jpg"
+      ],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices"
         }
       ]
     },
@@ -1626,39 +1347,6 @@
       ]
     },
     {
-      "id": "CPSC:1632",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2014-02-27",
-      "manufacturer": "Mammut Sports Group, Inc, of Williston, Vt.",
-      "title": "Mammut Recalls Crevasse Rescue Devices Due to Risk of Injury",
-      "summary": "The recall involves Mammut's RescYou crevasse rescue devices with batch numbers 12-12 and 03-13. The crevasse rescue devices are pulley systems used for ski mountaineering and mountain climbing to lift a skier or climber who has fallen into a crevasse. The rescue device consists of blue- and silver-finished…",
-      "hazard": "The pull cord lock cam can fail, posing a risk of death and injury during a rescue.",
-      "severity": "high",
-      "category": "Bergsport",
-      "products": [
-        "Mountain climbing rescue devices"
-      ],
-      "countries": [
-        "Taiwan"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2014/Mammut-Recalls-Crevasse-Rescue-Devices",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2014.14118.Image%25201_Batch%2520Number%2520Location_LARGE.jpg"
-      ],
-      "manufacturerName": "Mammut",
-      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
-      "manufacturerHome": "https://www.mammut.com",
-      "brandKey": "mammut",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2014/Mammut-Recalls-Crevasse-Rescue-Devices"
-        }
-      ]
-    },
-    {
       "id": "CPSC:1624",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1729,39 +1417,6 @@
       ]
     },
     {
-      "id": "CPSC:1324",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2013-02-27",
-      "manufacturer": "Singing Rock, of Ponikla, Czech Republic",
-      "title": "Liberty Mountain Recalls Mountain Climbing Lanyards Due to Risk of Serious Injury",
-      "summary": "This recall involves Easy Go XP Lock Via Ferrata Lanyards used for shock absorption on Via Ferrata mountain climbing routes. The lanyard has two elasticized webbing branches with self-locking carabiners at each end. Recalled units can be identified by the elasticized webbing. \"EASY GO XP LOCK\" is printed on a white…",
-      "hazard": "The elastic webbing on the lanyards can deteriorate over time and break while in use, posing a risk of serious injury or death to the climber.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Easy Go XP Lock Via Ferrata Lanyards"
-      ],
-      "countries": [
-        "Czech Republic"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2013/Liberty-Mountain-Recalls-Mountain-Climbing-Lanyards",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2013.13128.jpg"
-      ],
-      "manufacturerName": "Singing Rock",
-      "manufacturerUrl": "https://www.singingrock.com",
-      "manufacturerHome": "https://www.singingrock.com",
-      "brandKey": "singingrock",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2013/Liberty-Mountain-Recalls-Mountain-Climbing-Lanyards"
-        }
-      ]
-    },
-    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/august-2012-via-ferrata",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -1816,74 +1471,6 @@
           "source": "Edelrid",
           "sourceLabel": "EDELRID",
           "url": "https://edelrid.com/de-de/service/warnhinweis/klettersteigsets-edelrid-2012"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:752",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2011-08-30",
-      "manufacturer": "Petzl SAS, of Crolles, France",
-      "title": "Petzl America Recalls Belay Devices Due to Fall Hazard",
-      "summary": "The GRIGRI 2 belay device is used by rock climbers to control the climber's safety rope during a fall or while being lowered on the rope. The first five digits of the serial numbers of devices affected by this recall range from 10326 to 11136. The serial number is engraved on the body of the product underneath and…",
-      "hazard": "Excessive force on the handle can cause it to become stuck in the open position. When stuck open, the assisted braking function is disabled, posing a fall hazard to consumers.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "GRIGRI 2 belay device with assisted braking"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Belay-Devices-Due-to-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11314.11314.jpg"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Belay-Devices-Due-to-Fall-Hazard"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:720",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2011-07-12",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls Scorpio and Absorbica Safety Lanyards due to Fall Hazard",
-      "summary": "This recall affects all Scorpio and Absorbica lanyards manufactured before May 2011. Scorpio: Affected Scorpio lanyards manufactured between 2002 and 2005 are model numbers L60 and L60 CK. These are yellow and blue, Y-shaped lanyards with yellow stitching on both ends. They are connected by a metal O-ring to one end…",
-      "hazard": "Some lanyards are missing a safety stitch on the attachment loop, which can cause the lanyard to disconnect from the climbing harness, posing a fall hazard to consumers.",
-      "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Scorpio and Absorbica Shock Absorbing Lanyards"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Scorpio-and-Absorbica-Safety-Lanyards-due-to-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276a.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276b.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2011.11276.11276c.jpg"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2011/Petzl-America-Recalls-Scorpio-and-Absorbica-Safety-Lanyards-due-to-Fall-Hazard"
         }
       ]
     },
@@ -1954,42 +1541,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:4457",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2008-09-18",
-      "manufacturer": "Petzl S.A., of Crolles, France",
-      "title": "Safety Alert: Petzl America Warns of Burn Hazard from Headlamps; Product Should Only Be Used with Non-Rechargeable Batteries",
-      "summary": "This safety alert involves the \"MYO\" and \"MYO Belt\" headlamps with name and model numbers listed below. The \"MYO\" headlamps have a battery pack attached to the headband. The \"MYO Belt\" headlamps have a remote battery pack attached to the headlamp via a long electric cable. Name Model Number MYO E26P MYO-black E26PN…",
-      "hazard": "If the headlamp is used with rechargeable batteries, the cable connecting the battery pack to the lamp can spark, melt, or catch fire. This poses a burn hazard to consumers.",
-      "severity": "medium",
-      "category": "Sonstiges",
-      "products": [
-        "MYO and \"MYO Belt\" Headlamps"
-      ],
-      "countries": [
-        "France"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2008/Safety-Alert-Petzl-America-Warns-of-Burn-Hazard-from-Headlamps-Product-Should-Only-Be-Used-with-Non-Rechargeable-Batteries",
-      "images": [
-        "https://www.cpsc.gov/~/link/d099d148d366400b825632ead8530b1a.jpg",
-        "https://www.cpsc.gov/~/link/eb7178e3900f4a45bae7fc8f20df8512.jpg",
-        "https://www.cpsc.gov/~/link/4eaf1e7644f44559bf94b274e913411a.jpg",
-        "https://www.cpsc.gov/~/link/69281015141547c8853ad7ca5334c3f7.jpg"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2008/Safety-Alert-Petzl-America-Warns-of-Burn-Hazard-from-Headlamps-Product-Should-Only-Be-Used-with-Non-Rechargeable-Batteries"
         }
       ]
     },
@@ -2127,40 +1678,6 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2005/CPSC-Ortovox-USA-Announce-Recall-of-Avalanche-Transceivers"
-        }
-      ]
-    },
-    {
-      "id": "CPSC:3104",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2005-06-03",
-      "manufacturer": "Mine Safety Appliances Co. (MSA), of Pittsburgh, Pa.",
-      "title": "CPSC, MSA Announce Recall of Climbing Wall Descenders",
-      "summary": "Two types of descenders, which are used in recreational wall climbing, are included in this recall: Redpoint and Auto-Belay descenders. The descenders consist of a round metal housing into which a retractable red strap (Redpoint) or steel cable (Auto-Belay) is coiled. The front of each descender's round metal housing…",
-      "hazard": "This product, which assists wall climbers during descent, has a faulty bearing that can cause the brakes to fail. When this occurs, wall climbers risk rapid descent, with no braking capability.",
-      "severity": "medium",
-      "category": "Bergsport",
-      "products": [
-        "Redpoint™ and Auto-Belay Descenders"
-      ],
-      "countries": [
-        "United States"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2005/CPSC-MSA-Announce-Recall-of-Climbing-Wall-Descenders-",
-      "images": [
-        "https://www.cpsc.gov/~/link/0264d943742d43e0974275f9a85043bc.jpg",
-        "https://www.cpsc.gov/~/link/e2154693b51142408e256322db4331af.jpg"
-      ],
-      "manufacturerName": "MSA Safety",
-      "manufacturerUrl": "https://www.msasafety.com/recalls",
-      "manufacturerHome": "https://www.msasafety.com",
-      "brandKey": "msa",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2005/CPSC-MSA-Announce-Recall-of-Climbing-Wall-Descenders-"
         }
       ]
     },
