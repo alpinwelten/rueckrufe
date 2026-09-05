@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-09-05T10:42:16.255Z",
+    "generatedAt": "2026-09-05T15:26:13.279Z",
     "total": 84,
-    "rawTotal": 120,
+    "rawTotal": 100,
     "scope": "eu-relevant",
-    "droppedUsOnly": 36,
+    "droppedUsOnly": 16,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 16015,
-        "fetched": 91
+        "ms": 446035,
+        "fetched": 71
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 29,
         "ok": true,
-        "ms": 13638,
+        "ms": 13537,
         "fetched": 29
       },
       {
@@ -27,7 +27,7 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1657,
+        "ms": 1678,
         "fetched": 0
       }
     ],
@@ -50,40 +50,6 @@
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
   },
   "recalls": [
-    {
-      "id": "CPSC:10774",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2026-05-14",
-      "manufacturer": "Petzl America",
-      "title": "Petzl America Recalls SIMBA and SWAN EASYFIT Harnesses Due to Risk of Serious Injury or Death from Fall Hazard",
-      "summary": "This recall involves Petzl harnesses sold individually and in packs of five. Serial numbers are printed on plastic cards on the interior of the harnesses. All harnesses are offered in gray/orange color combinations. Harnesses included in the recall include: Recalled Harness Name Harness Serial Number/Size SIMBA…",
-      "hazard": "The recalled harnesses are missing rivets in the FAST LT PIN-LOCK buckles, causing the buckles to open, posing a risk of serious injury or death from a fall hazard.",
-      "severity": "high",
-      "category": "PSAgA",
-      "products": [
-        "Petzl SIMBA CLIMBING and SIMBA PARK Children's Harnesses, SWAN EASYFIT STEEL and SWAN EASYFIT STAINLESS Harnesses"
-      ],
-      "countries": [
-        "Romania"
-      ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Picture1_166.png",
-        "https://www.cpsc.gov/s3fs-public/Picture2_132.png"
-      ],
-      "manufacturerName": "Petzl",
-      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
-      "manufacturerHome": "https://www.petzl.com",
-      "brandKey": "petzl",
-      "sources": [
-        {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
-        }
-      ]
-    },
     {
       "id": "CPSC:10775",
       "source": "CPSC",
@@ -115,6 +81,40 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-ASTRO-BOD-FAST-ASTRO-SIT-FAST-and-CANYON-GUIDE-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:10774",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2026-05-14",
+      "manufacturer": "Petzl America",
+      "title": "Petzl America Recalls SIMBA and SWAN EASYFIT Harnesses Due to Risk of Serious Injury or Death from Fall Hazard",
+      "summary": "This recall involves Petzl harnesses sold individually and in packs of five. Serial numbers are printed on plastic cards on the interior of the harnesses. All harnesses are offered in gray/orange color combinations. Harnesses included in the recall include: Recalled Harness Name Harness Serial Number/Size SIMBA…",
+      "hazard": "The recalled harnesses are missing rivets in the FAST LT PIN-LOCK buckles, causing the buckles to open, posing a risk of serious injury or death from a fall hazard.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Petzl SIMBA CLIMBING and SIMBA PARK Children's Harnesses, SWAN EASYFIT STEEL and SWAN EASYFIT STAINLESS Harnesses"
+      ],
+      "countries": [
+        "Romania"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Picture1_166.png",
+        "https://www.cpsc.gov/s3fs-public/Picture2_132.png"
+      ],
+      "manufacturerName": "Petzl",
+      "manufacturerUrl": "https://www.petzl.com/INT/en/Professional/safety-alerts",
+      "manufacturerHome": "https://www.petzl.com",
+      "brandKey": "petzl",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-SIMBA-and-SWAN-EASYFIT-Harnesses-Due-to-Risk-of-Serious-Injury-or-Death-from-Fall-Hazard"
         }
       ]
     },
@@ -1247,26 +1247,27 @@
       ]
     },
     {
-      "id": "CPSC:6738",
+      "id": "CPSC:6739",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
       "date": "2016-05-19",
       "manufacturer": "Black Diamond",
-      "title": "Black Diamond Recalls Camming Climbing Devices Due to Fall Hazard",
-      "summary": "This recall involves all sizes of Black Diamond Camalot and Camalot Ultralight camming devices. The climbing devices are used to secure ropes while rock climbing. The Camalots were sold in sizes 0.3 to 6 and have manufacturing codes from 5133 to 6067. The Camalot Ultralights were sold in sizes 0.4 to 4 and have…",
-      "hazard": "The camming devices can come apart during use and fail, posing a fall hazard to the consumer.",
-      "severity": "medium",
+      "title": "Black Diamond Recalls Via Ferrata Climbing Equipment Due to Fall Hazard",
+      "summary": "This recall involves Black Diamond Easy Rider and Iron Cruiser via ferrata climbing sets with manufacturing codes between 5293 and 5350. The manufacturing code is located on a sewn-in fabric label located inside the zippered cover. \"Easy Rider\" or \"Iron Cruiser\" and \"Black Diamond\" are printed on the black nylon cover.",
+      "hazard": "Climbing sets sold without the orange safety stitching on the lanyards can allow the ends to unexpectedly detach, posing a risk of injury or death to climbers from a fall.",
+      "severity": "high",
       "category": "PSAgA",
       "products": [
-        "Black Diamond Camalot climbing devices"
+        "Black Diamond via ferrata climbing sets"
       ],
       "countries": [
         "United States"
       ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices",
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Via-Ferrata-Climbing-Equipment",
       "images": [
-        "https://www.cpsc.gov/s3fs-public/16168a.jpg",
-        "https://www.cpsc.gov/s3fs-public/16168b.jpg"
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169a.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169b.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169c.jpg"
       ],
       "manufacturerName": "Black Diamond",
       "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
@@ -1276,7 +1277,7 @@
         {
           "source": "CPSC",
           "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices"
+          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Via-Ferrata-Climbing-Equipment"
         }
       ]
     },
@@ -1316,27 +1317,26 @@
       ]
     },
     {
-      "id": "CPSC:6739",
+      "id": "CPSC:6738",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
       "date": "2016-05-19",
       "manufacturer": "Black Diamond",
-      "title": "Black Diamond Recalls Via Ferrata Climbing Equipment Due to Fall Hazard",
-      "summary": "This recall involves Black Diamond Easy Rider and Iron Cruiser via ferrata climbing sets with manufacturing codes between 5293 and 5350. The manufacturing code is located on a sewn-in fabric label located inside the zippered cover. \"Easy Rider\" or \"Iron Cruiser\" and \"Black Diamond\" are printed on the black nylon cover.",
-      "hazard": "Climbing sets sold without the orange safety stitching on the lanyards can allow the ends to unexpectedly detach, posing a risk of injury or death to climbers from a fall.",
-      "severity": "high",
+      "title": "Black Diamond Recalls Camming Climbing Devices Due to Fall Hazard",
+      "summary": "This recall involves all sizes of Black Diamond Camalot and Camalot Ultralight camming devices. The climbing devices are used to secure ropes while rock climbing. The Camalots were sold in sizes 0.3 to 6 and have manufacturing codes from 5133 to 6067. The Camalot Ultralights were sold in sizes 0.4 to 4 and have…",
+      "hazard": "The camming devices can come apart during use and fail, posing a fall hazard to the consumer.",
+      "severity": "medium",
       "category": "PSAgA",
       "products": [
-        "Black Diamond via ferrata climbing sets"
+        "Black Diamond Camalot climbing devices"
       ],
       "countries": [
         "United States"
       ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Via-Ferrata-Climbing-Equipment",
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices",
       "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169a.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169b.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2016.16169.16169c.jpg"
+        "https://www.cpsc.gov/s3fs-public/16168a.jpg",
+        "https://www.cpsc.gov/s3fs-public/16168b.jpg"
       ],
       "manufacturerName": "Black Diamond",
       "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
@@ -1346,7 +1346,7 @@
         {
           "source": "CPSC",
           "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Via-Ferrata-Climbing-Equipment"
+          "url": "https://www.cpsc.gov/Recalls/2016/Black-Diamond-Recalls-Camming-Climbing-Devices"
         }
       ]
     },
