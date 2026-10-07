@@ -1,25 +1,25 @@
 {
   "meta": {
-    "generatedAt": "2026-10-07T06:11:48.633Z",
-    "total": 80,
-    "rawTotal": 115,
+    "generatedAt": "2026-10-07T13:33:16.400Z",
+    "total": 84,
+    "rawTotal": 120,
     "scope": "eu-relevant",
-    "droppedUsOnly": 35,
+    "droppedUsOnly": 36,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 51,
+        "count": 55,
         "ok": true,
-        "ms": 235783,
-        "fetched": 86
+        "ms": 13537,
+        "fetched": 91
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
         "count": 29,
         "ok": true,
-        "ms": 13442,
+        "ms": 14736,
         "fetched": 29
       },
       {
@@ -27,24 +27,24 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1668,
+        "ms": 1867,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 51,
+      "CPSC": 55,
       "ClimbingTechnology": 13,
       "Edelrid": 16
     },
     "byCategory": {
-      "PSAgA": 24,
+      "PSAgA": 28,
       "Bergsport": 52,
       "Arbeitssicherheit": 1,
       "Sonstiges": 3
     },
     "bySeverity": {
       "high": 31,
-      "medium": 48,
+      "medium": 52,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -501,6 +501,39 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2024/Salewa-USA-Recalls-Wild-Country-Ropeman-1-Ascenders-Due-to-a-Failure-to-Ascend"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:9670",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2023-07-20",
+      "manufacturer": "Salewa USA",
+      "title": "Salewa USA Recalls Wild Country Superlight Rocks Cable Wire Chocks Used for Climbing Due to Fall Hazard",
+      "summary": "This recall involves Wild Country brand Superlight Rocks (model number 40-RSL) and Superlight Rocks Set 1-6 (model number 40-RSLSET) single cable wire chocks used for climbing. Superlight Rocks were sold as a set of 6 and individually in six different sizes and colors including: size 1 purple, size 2 green, size 3…",
+      "hazard": "When exposed to seaside conditions, corrosion can occur and weaken the cable chocks and they can break, posing a fall hazard to climbers.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Superlight Rocks"
+      ],
+      "countries": [
+        "Taiwan"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2023/Salewa-USA-Recalls-Wild-Country-Superlight-Rocks-Cable-Wire-Chocks-Used-for-Climbing-Due-to-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/wild-country.png"
+      ],
+      "manufacturerName": "Salewa",
+      "manufacturerUrl": "https://www.salewa.com",
+      "manufacturerHome": "https://www.salewa.com",
+      "brandKey": "salewa",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2023/Salewa-USA-Recalls-Wild-Country-Superlight-Rocks-Cable-Wire-Chocks-Used-for-Climbing-Due-to-Fall-Hazard"
         }
       ]
     },
@@ -1176,6 +1209,40 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2018/Omega-Pacific-Recalls-Carabiners-Due-to-Risk-of-Injury-or-Death"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:7843",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2016-08-31",
+      "manufacturer": "Salewa North America",
+      "title": "Salewa North America Recalls Wild Country Climbing Harnesses Due to Fall Hazard (Recall Alert)",
+      "summary": "This recall applies to all Wild Country Syncro harnesses sold in the United States. The harness has a black nylon exterior and orange interior. \"Wild Country\" and \"Syncro\" is printed on a label affixed to the interior, above batch code: 01 A 01 16.",
+      "hazard": "Excess materials on the left waist belt tab can cause the harness to loosen, posing a fall hazard to the user.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Wild Country Syncro Harnesses"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2016/Salewa-North-America-Recalls-Wild-Country-Climbing-Harnesses",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/WildCountrySyncroHarness.jpg",
+        "https://www.cpsc.gov/s3fs-public/BatchCode.jpg"
+      ],
+      "manufacturerName": "Salewa",
+      "manufacturerUrl": "https://www.salewa.com",
+      "manufacturerHome": "https://www.salewa.com",
+      "brandKey": "salewa",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2016/Salewa-North-America-Recalls-Wild-Country-Climbing-Harnesses"
         }
       ]
     },
@@ -1857,6 +1924,40 @@
       ]
     },
     {
+      "id": "CPSC:517",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2010-11-23",
+      "manufacturer": "L.L.Bean",
+      "title": "L.L.Bean Recalls Folding Camp Rockers Due to Fall Hazard",
+      "summary": "This recall involves L.L.Bean folding camp rockers with a fabric cover and a steel frame. The rockers have a fabric/mesh seat and back and a cup holder on the right armrest. \"L.L.Bean\" is printed on the seat back. Rockers with the number RNR113 and RNR114 listed on the white tag under the seat are included in the…",
+      "hazard": "The plastic anchors attaching the fabric seat back to the frame can break, posing a fall hazard to consumers.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Folding Camp Rockers"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11050.11050a.jpg",
+        "https://www.cpsc.gov/s3fs-public/Recall.2011.11050.11050b.jpg"
+      ],
+      "manufacturerName": "CAMP",
+      "manufacturerUrl": "https://www.camp.it/en/safety-notice",
+      "manufacturerHome": "https://www.camp.it",
+      "brandKey": "camp",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard"
+        }
+      ]
+    },
+    {
       "id": "CPSC:4457",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1889,6 +1990,41 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2008/Safety-Alert-Petzl-America-Warns-of-Burn-Hazard-from-Headlamps-Product-Should-Only-Be-Used-with-Non-Rechargeable-Batteries"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:4051",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2007-10-18",
+      "manufacturer": "Gorilla Inc., of Flushing, Mich.",
+      "title": "Kong Maxx Ladder Stands Sold at Gander Mountain Recalled Due to Fall Hazard",
+      "summary": "This recall involves Gorilla Kong Maxx Ladder Stands with model number 43032 and batch numbers G051507, G051507D, G061507D, G071507D, and G081507D. Model numbers are printed on the box only. Batch numbers are stamped on the vertical rail of the first ladder section. The stand is 19 feet to the shooting rail, or 16…",
+      "hazard": "The ladder stands can become unstable while in use, causing the user to fall. The addition of one ladder section to the stand makes the platform further away from the bracing. When the stand is at its full height, the distance between the bracing and the platform may result in platform instability prior to attachment to and/or detachment from the tree.",
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [
+        "Kong Maxx Ladder Stands"
+      ],
+      "countries": [
+        "China"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2008/Kong-Maxx-Ladder-Stands-Sold-at-Gander-Mountain-Recalled-Due-to-Fall-Hazard",
+      "images": [
+        "https://www.cpsc.gov/~/link/641f6415056649b6bb569263084e585e.jpg",
+        "https://www.cpsc.gov/~/link/bced8226539e4bb3bd3c9ce1bbc45b5e.jpg",
+        "https://www.cpsc.gov/~/link/2adc62c06f1649e182cb5cdce976b068.jpg"
+      ],
+      "manufacturerName": "KONG",
+      "manufacturerUrl": "https://www.kong.it",
+      "manufacturerHome": "https://www.kong.it",
+      "brandKey": "kong",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2008/Kong-Maxx-Ladder-Stands-Sold-at-Gander-Mountain-Recalled-Due-to-Fall-Hazard"
         }
       ]
     },
