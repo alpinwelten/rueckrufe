@@ -1,50 +1,56 @@
 {
   "meta": {
-    "generatedAt": "2026-10-12T06:14:02.514Z",
-    "total": 82,
-    "rawTotal": 113,
+    "generatedAt": "2026-10-12T15:47:23.187Z",
+    "total": 100,
+    "rawTotal": 134,
     "scope": "eu-relevant",
-    "droppedUsOnly": 31,
+    "droppedUsOnly": 32,
     "sources": [
       {
         "key": "CPSC",
         "label": "US CPSC",
-        "count": 53,
+        "count": 52,
         "ok": true,
-        "ms": 442333,
+        "ms": 489751,
         "fetched": 84
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
-        "count": 29,
+        "count": 48,
         "ok": true,
-        "ms": 13095,
-        "fetched": 29
+        "ms": 76935,
+        "fetched": 50
       },
       {
         "key": "SafetyGate",
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 1713,
+        "ms": 8746,
         "fetched": 0
       }
     ],
     "bySource": {
-      "CPSC": 53,
+      "CPSC": 52,
+      "Skylotec": 1,
+      "BlackDiamond": 8,
       "ClimbingTechnology": 13,
-      "Edelrid": 16
+      "DMM": 6,
+      "Beal": 2,
+      "Edelrid": 16,
+      "Mammut": 1,
+      "Sterling": 1
     },
     "byCategory": {
-      "PSAgA": 27,
-      "Bergsport": 51,
-      "Arbeitssicherheit": 1,
+      "PSAgA": 28,
+      "Bergsport": 65,
+      "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
-      "high": 30,
-      "medium": 51,
+      "high": 31,
+      "medium": 68,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -186,6 +192,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2026/Petzl-America-Recalls-Nomic-and-Ergonomic-Ice-Climbing-Axes-Due-to-Fall-Hazard-Risk-of-Serious-Injury-or-Death"
+        }
+      ]
+    },
+    {
+      "id": "Skylotec:https://cdn-dotcom-prod.skylotec.com/media/3b/b3/a5/1768490926/Product_recall_BREASEY_20260115_DE_EN.pdf?ts=1768490926",
+      "source": "Skylotec",
+      "sourceLabel": "SKYLOTEC",
+      "date": "2026-01-15",
+      "manufacturer": "SKYLOTEC",
+      "title": "Produktrückruf BREASEY",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://cdn-dotcom-prod.skylotec.com/media/3b/b3/a5/1768490926/Product_recall_BREASEY_20260115_DE_EN.pdf?ts=1768490926",
+      "images": [],
+      "manufacturerName": "SKYLOTEC",
+      "manufacturerUrl": "https://www.skylotec.com/int_de/Retouren-und-Rueckrufe/",
+      "manufacturerHome": "https://www.skylotec.com",
+      "brandKey": "skylotec",
+      "sources": [
+        {
+          "source": "Skylotec",
+          "sourceLabel": "SKYLOTEC",
+          "url": "https://cdn-dotcom-prod.skylotec.com/media/3b/b3/a5/1768490926/Product_recall_BREASEY_20260115_DE_EN.pdf?ts=1768490926"
         }
       ]
     },
@@ -366,6 +401,35 @@
       ]
     },
     {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/recon-lt-recall-2025",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": "2025-01-01",
+      "manufacturer": "Black Diamond",
+      "title": "Recon LT Beacon Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/recon-lt-recall-2025",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/recon-lt-recall-2025"
+        }
+      ]
+    },
+    {
       "id": "CPSC:10116",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -501,6 +565,35 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2024/Salewa-USA-Recalls-Wild-Country-Ropeman-1-Ascenders-Due-to-a-Failure-to-Ascend"
+        }
+      ]
+    },
+    {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/2024-pieps-pro-ips-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": "2024-01-01",
+      "manufacturer": "Black Diamond",
+      "title": "PIEPS Pro IPS",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/2024-pieps-pro-ips-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/2024-pieps-pro-ips-recall"
         }
       ]
     },
@@ -801,6 +894,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2022-01-01",
+      "manufacturer": "DMM",
+      "title": "Important Safety Notice: Product Recall DMM Compact Swivel Units- 2/11/2022",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-product-recall-dmm-compact-swivel-units"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/02-november-2021-rollnlock",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -924,35 +1046,60 @@
       ]
     },
     {
-      "id": "CPSC:9024",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2021-03-24",
-      "manufacturer": "Beal Sas, of France",
-      "title": "Birdie Belay Devices Recalled Due to Risk of Injury; Made by Beal Sas",
-      "summary": "The Beal Birdie Belay Device is used by rock climbers. Belay devices are used with climbing ropes to protect the climber while climbing, to arrest a fall or while being lowered on the rope. The Beal Birdie Belay Device was sold in three colors: Orange handle, Blue handle or Green handle. This recall involves all…",
-      "hazard": "The device user can be unable to lower the climber, posing a risk of injury to the climber.",
-      "severity": "high",
-      "category": "Bergsport",
-      "products": [
-        "Beal Birdie Belay Devices"
-      ],
+      "id": "Beal:https://www.beal-planet.com/cdn/shop/files/AFFICHETTE-RAPPEL-TRACT-UP-FR.pdf?v=1111414723612789296",
+      "source": "Beal",
+      "sourceLabel": "Beal",
+      "date": "2021-01-01",
+      "manufacturer": "Beal",
+      "title": "TRACT UP rappel du produit Juillet 2021 (PDF)",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Arbeitssicherheit",
+      "products": [],
       "countries": [
-        "Taiwan"
+        "EU"
       ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2021/Birdie-Belay-Devices-Recalled-Due-to-Risk-of-Injury-Made-by-Beal-Sas",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Picture1-1_4.png"
-      ],
+      "sourceUrl": "https://www.beal-planet.com/cdn/shop/files/AFFICHETTE-RAPPEL-TRACT-UP-FR.pdf?v=1111414723612789296",
+      "images": [],
       "manufacturerName": "Beal",
       "manufacturerUrl": "https://www.beal-planet.com",
       "manufacturerHome": "https://www.beal-planet.com",
       "brandKey": "beal",
       "sources": [
         {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2021/Birdie-Belay-Devices-Recalled-Due-to-Risk-of-Injury-Made-by-Beal-Sas"
+          "source": "Beal",
+          "sourceLabel": "Beal",
+          "url": "https://www.beal-planet.com/cdn/shop/files/AFFICHETTE-RAPPEL-TRACT-UP-FR.pdf?v=1111414723612789296"
+        }
+      ]
+    },
+    {
+      "id": "Beal:https://www.beal-planet.com/cdn/shop/files/Inspection-BIRDIE-2021-FR-2_d46b3223-ff80-4084-babb-b67f1a35308f.pdf?v=163408369011342614",
+      "source": "Beal",
+      "sourceLabel": "Beal",
+      "date": "2021-01-01",
+      "manufacturer": "Beal",
+      "title": "BIRDIE appel à vérification Février 2021 (PDF)",
+      "summary": "",
+      "hazard": null,
+      "severity": "high",
+      "category": "Arbeitssicherheit",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://www.beal-planet.com/cdn/shop/files/Inspection-BIRDIE-2021-FR-2_d46b3223-ff80-4084-babb-b67f1a35308f.pdf?v=163408369011342614",
+      "images": [],
+      "manufacturerName": "Beal",
+      "manufacturerUrl": "https://www.beal-planet.com",
+      "manufacturerHome": "https://www.beal-planet.com",
+      "brandKey": "beal",
+      "sources": [
+        {
+          "source": "Beal",
+          "sourceLabel": "Beal",
+          "url": "https://www.beal-planet.com/cdn/shop/files/Inspection-BIRDIE-2021-FR-2_d46b3223-ff80-4084-babb-b67f1a35308f.pdf?v=163408369011342614"
         }
       ]
     },
@@ -1105,6 +1252,69 @@
           "source": "ClimbingTechnology",
           "sourceLabel": "Climbing Technology",
           "url": "https://www.climbingtechnology.com/en/alerts/09-september-2019-up-lock"
+        }
+      ]
+    },
+    {
+      "id": "CPSC:8632",
+      "source": "CPSC",
+      "sourceLabel": "US CPSC",
+      "date": "2019-08-07",
+      "manufacturer": "Seattle Manufacturing Corporation",
+      "title": "Seattle Manufacturing Corporation Recalls Ice Axes Due to Serious Injury and Fall Hazards",
+      "summary": "This recall involves Kobah Ice Axes of lengths 60, 65, 70 and 75 centimeters. The axes each have a steel pick and adze joined at the top of an orange aluminum handle shaft by a black polyamide resin head. There is a steel spike in the bottom of the handle shaft. \"Kobah,\" \"SMC\" and Manufacturer's Lot Number (MLN)…",
+      "hazard": "The spike and/or head of the ice axe can detach from the handle during use, posing serious injury and fall hazards to the climber.",
+      "severity": "high",
+      "category": "PSAgA",
+      "products": [
+        "Kobah Ice Axes"
+      ],
+      "countries": [
+        "United States"
+      ],
+      "sourceUrl": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards",
+      "images": [
+        "https://www.cpsc.gov/s3fs-public/1_37.png",
+        "https://www.cpsc.gov/s3fs-public/2_32.jpg"
+      ],
+      "manufacturerName": "SMC (Seattle Manufacturing)",
+      "manufacturerUrl": "https://www.smcgear.net",
+      "manufacturerHome": "https://www.smcgear.net",
+      "brandKey": "smc",
+      "sources": [
+        {
+          "source": "CPSC",
+          "sourceLabel": "US CPSC",
+          "url": "https://www.cpsc.gov/Recalls/2019/Seattle-Manufacturing-Corporation-Recalls-Ice-Axes-Due-to-Serious-Injury-and-Fall-Hazards"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2019-01-01",
+      "manufacturer": "DMM",
+      "title": "Important Safety Notice: Nexus recall for inspection – 21/10/2019",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-nexus-recall-for-inspection"
         }
       ]
     },
@@ -1556,6 +1766,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/dmm-product-recall",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2015-01-01",
+      "manufacturer": "DMM",
+      "title": "Gate pusher user inspection and recall – 14/09/2015",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/dmm-product-recall",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/dmm-product-recall"
+        }
+      ]
+    },
+    {
       "id": "CPSC:1862",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1625,38 +1864,31 @@
       ]
     },
     {
-      "id": "CPSC:1624",
-      "source": "CPSC",
-      "sourceLabel": "US CPSC",
-      "date": "2014-02-20",
-      "manufacturer": "Sterling Rope Company, Inc., of Biddeford, Maine",
-      "title": "Sterling Rope Company Recalls Sewn Cords Due to Fall Hazard",
-      "summary": "This recall involves four models of Sterling Rope's sewn cords which include the 8mm Aztek (AZ) Sewn Bound Loop Prusik, Aztek (AZ) Elite 8mm Edge Restraint, 8mm PER Sewn Eye and the 8mm Accessory Cord Sewn Eye. Sterling Rope products have the production lot number in two places. The product number and lot number are…",
-      "hazard": "Sewn cords break at a lower weight than published weight values, posing a fall hazard.",
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/2014-whippet-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": "2014-01-01",
+      "manufacturer": "Black Diamond",
+      "title": "Whippet Recall",
+      "summary": "",
+      "hazard": null,
       "severity": "medium",
-      "category": "PSAgA",
-      "products": [
-        "Sewn cord edge restraints, sewn eyes and sewn loops."
-      ],
+      "category": "Arbeitssicherheit",
+      "products": [],
       "countries": [
-        "United States"
+        "EU"
       ],
-      "sourceUrl": "https://www.cpsc.gov/Recalls/2014/Sterling-Rope-Company-Recalls-Sewn-Cords",
-      "images": [
-        "https://www.cpsc.gov/s3fs-public/Recall.2014.14108.8mm_bound_loop_prusikLARGE.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2014.14108.8mm_elite_edge_restraint800.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2014.14108.Sewn%2520Eye%2520Yellow800.jpg",
-        "https://www.cpsc.gov/s3fs-public/Recall.2014.14108.sewneye_8mm_per_sewn_eye_800.jpg"
-      ],
-      "manufacturerName": "Sterling Rope",
-      "manufacturerUrl": "https://sterlingrope.com/sterling-solid/all-articles/",
-      "manufacturerHome": "https://sterlingrope.com",
-      "brandKey": "sterling",
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/2014-whippet-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
       "sources": [
         {
-          "source": "CPSC",
-          "sourceLabel": "US CPSC",
-          "url": "https://www.cpsc.gov/Recalls/2014/Sterling-Rope-Company-Recalls-Sewn-Cords"
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/2014-whippet-recall"
         }
       ]
     },
@@ -1890,6 +2122,35 @@
       ]
     },
     {
+      "id": "DMM:https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2011-01-01",
+      "manufacturer": "DMM",
+      "title": "Update on Dragon 4 & 5 Recall - 11/03/2011",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/important-safety-notice-dragon-size-4-and-5-recall-16-02-2011"
+        }
+      ]
+    },
+    {
       "id": "CPSC:517",
       "source": "CPSC",
       "sourceLabel": "US CPSC",
@@ -1920,6 +2181,64 @@
           "source": "CPSC",
           "sourceLabel": "US CPSC",
           "url": "https://www.cpsc.gov/Recalls/2010/LLBean-Recalls-Folding-Camp-Rockers-Due-to-Fall-Hazard"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2010-01-01",
+      "manufacturer": "DMM",
+      "title": "Dragon 6 recall update – 24/09/2010",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/dragon-6-recall-update-24-09-2010"
+        }
+      ]
+    },
+    {
+      "id": "DMM:https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010",
+      "source": "DMM",
+      "sourceLabel": "DMM",
+      "date": "2010-01-01",
+      "manufacturer": "DMM",
+      "title": "Recall on the Dragon Camming device size 6 – 23/07/2010",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010",
+      "images": [],
+      "manufacturerName": "DMM",
+      "manufacturerUrl": "https://dmmwales.com/pages/recall-info",
+      "manufacturerHome": "https://dmmwales.com",
+      "brandKey": "dmm",
+      "sources": [
+        {
+          "source": "DMM",
+          "sourceLabel": "DMM",
+          "url": "https://dmmwales.com/pages/recall-on-the-dragon-camming-device-size-6-23-07-2010"
         }
       ]
     },
@@ -2432,6 +2751,35 @@
       ]
     },
     {
+      "id": "Mammut:https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set",
+      "source": "Mammut",
+      "sourceLabel": "Mammut",
+      "date": null,
+      "manufacturer": "Mammut",
+      "title": "Aufruf zur Selbstkontrolle: Mammut Skywalker Pro Via Ferrata Set",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set",
+      "images": [],
+      "manufacturerName": "Mammut",
+      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
+      "manufacturerHome": "https://www.mammut.com",
+      "brandKey": "mammut",
+      "sources": [
+        {
+          "source": "Mammut",
+          "sourceLabel": "Mammut",
+          "url": "https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set"
+        }
+      ]
+    },
+    {
       "id": "Edelrid:https://edelrid.com/de-de/service/warnhinweis/aufruf-zur-ueberpruefung-cable-comfort-tri",
       "source": "Edelrid",
       "sourceLabel": "EDELRID",
@@ -2519,6 +2867,35 @@
       ]
     },
     {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/beacon-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": null,
+      "manufacturer": "Black Diamond",
+      "title": "Beacon Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/beacon-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/beacon-recall"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/finch-instructions-for-use",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -2577,6 +2954,35 @@
       ]
     },
     {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/jetforce-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": null,
+      "manufacturer": "Black Diamond",
+      "title": "JetForce Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/jetforce-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/jetforce-recall"
+        }
+      ]
+    },
+    {
       "id": "ClimbingTechnology:https://www.climbingtechnology.com/en/alerts/mag-fluid-safety-recall",
       "source": "ClimbingTechnology",
       "sourceLabel": "Climbing Technology",
@@ -2602,6 +3008,93 @@
           "source": "ClimbingTechnology",
           "sourceLabel": "Climbing Technology",
           "url": "https://www.climbingtechnology.com/en/alerts/mag-fluid-safety-recall"
+        }
+      ]
+    },
+    {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/neve-strap-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": null,
+      "manufacturer": "Black Diamond",
+      "title": "Neve Strap Crampons",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/neve-strap-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/neve-strap-recall"
+        }
+      ]
+    },
+    {
+      "id": "Sterling:https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools",
+      "source": "Sterling",
+      "sourceLabel": "Sterling Rope",
+      "date": null,
+      "manufacturer": "Sterling Rope",
+      "title": "Notice To Inspect 6 8mm Accessory Cord Spools",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools",
+      "images": [],
+      "manufacturerName": "Sterling Rope",
+      "manufacturerUrl": "https://sterlingrope.com/sterling-solid/all-articles/",
+      "manufacturerHome": "https://sterlingrope.com",
+      "brandKey": "sterling",
+      "sources": [
+        {
+          "source": "Sterling",
+          "sourceLabel": "Sterling Rope",
+          "url": "https://sterlingrope.com/sterling-solid/notice-to-inspect-6-8mm-accessory-cord-spools"
+        }
+      ]
+    },
+    {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/dsp-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": null,
+      "manufacturer": "Black Diamond",
+      "title": "Pieps DSP Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "Bergsport",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/dsp-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/dsp-recall"
         }
       ]
     },
@@ -2689,6 +3182,35 @@
           "source": "Edelrid",
           "sourceLabel": "EDELRID",
           "url": "https://edelrid.com/de-de/service/warnhinweis/ueberpruefung-der-steigeisen-softbindung"
+        }
+      ]
+    },
+    {
+      "id": "BlackDiamond:https://black-diamond-na.myshopify.com/pages/vision-harness-recall",
+      "source": "BlackDiamond",
+      "sourceLabel": "Black Diamond",
+      "date": null,
+      "manufacturer": "Black Diamond",
+      "title": "Vision Harness Recall",
+      "summary": "",
+      "hazard": null,
+      "severity": "medium",
+      "category": "PSAgA",
+      "products": [],
+      "countries": [
+        "EU"
+      ],
+      "sourceUrl": "https://black-diamond-na.myshopify.com/pages/vision-harness-recall",
+      "images": [],
+      "manufacturerName": "Black Diamond",
+      "manufacturerUrl": "https://www.blackdiamondequipment.com/pages/product-recalls",
+      "manufacturerHome": "https://www.blackdiamondequipment.com",
+      "brandKey": "blackdiamond",
+      "sources": [
+        {
+          "source": "BlackDiamond",
+          "sourceLabel": "Black Diamond",
+          "url": "https://black-diamond-na.myshopify.com/pages/vision-harness-recall"
         }
       ]
     },
