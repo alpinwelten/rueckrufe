@@ -1,8 +1,8 @@
 {
   "meta": {
-    "generatedAt": "2026-10-15T04:49:40.707Z",
-    "total": 103,
-    "rawTotal": 141,
+    "generatedAt": "2026-10-15T11:39:21.764Z",
+    "total": 102,
+    "rawTotal": 140,
     "scope": "eu-relevant",
     "droppedUsOnly": 36,
     "sources": [
@@ -11,23 +11,23 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 13556,
+        "ms": 15802,
         "fetched": 91
       },
       {
         "key": "Hersteller",
         "label": "Hersteller-Seiten",
-        "count": 48,
+        "count": 47,
         "ok": true,
-        "ms": 45841,
-        "fetched": 50
+        "ms": 44489,
+        "fetched": 49
       },
       {
         "key": "SafetyGate",
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 10305,
+        "ms": 7153,
         "fetched": 0
       }
     ],
@@ -39,18 +39,17 @@
       "DMM": 6,
       "Beal": 2,
       "Edelrid": 16,
-      "Mammut": 1,
       "Sterling": 1
     },
     "byCategory": {
       "PSAgA": 29,
-      "Bergsport": 67,
+      "Bergsport": 66,
       "Arbeitssicherheit": 4,
       "Sonstiges": 3
     },
     "bySeverity": {
       "high": 32,
-      "medium": 70,
+      "medium": 69,
       "info": 1
     },
     "disclaimer": "EU-relevante Auswahl: Rückrufe in Europa verkaufter Marken (Hersteller-Rückrufseiten, EU Safety Gate sowie US-CPSC-Meldungen dieser Marken). Best-Effort-Aggregation öffentlicher Quellen, keine Gewähr für Vollständigkeit oder Aktualität – im Zweifel immer die offizielle Hersteller- bzw. Behördenmeldung prüfen."
@@ -2850,35 +2849,6 @@
           "source": "Edelrid",
           "sourceLabel": "EDELRID",
           "url": "https://edelrid.com/de-de/service/warnhinweis/aufruf-zur-nachruestung-von-screw-d-ring-schrauben"
-        }
-      ]
-    },
-    {
-      "id": "Mammut:https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set",
-      "source": "Mammut",
-      "sourceLabel": "Mammut",
-      "date": null,
-      "manufacturer": "Mammut",
-      "title": "Aufruf zur Selbstkontrolle: Mammut Skywalker Pro Via Ferrata Set",
-      "summary": "",
-      "hazard": null,
-      "severity": "medium",
-      "category": "Bergsport",
-      "products": [],
-      "countries": [
-        "EU"
-      ],
-      "sourceUrl": "https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set",
-      "images": [],
-      "manufacturerName": "Mammut",
-      "manufacturerUrl": "https://www.mammut.com/de/de/service/produktsicherheit",
-      "manufacturerHome": "https://www.mammut.com",
-      "brandKey": "mammut",
-      "sources": [
-        {
-          "source": "Mammut",
-          "sourceLabel": "Mammut",
-          "url": "https://pr.mammut.com/aufruf-zur-selbstkontrolle-mammut-skywalker-pro-via-ferrata-set"
         }
       ]
     },
