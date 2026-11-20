@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generatedAt": "2026-11-20T07:26:58.200Z",
+    "generatedAt": "2026-11-20T20:29:34.490Z",
     "total": 102,
     "rawTotal": 140,
     "scope": "eu-relevant",
@@ -11,7 +11,7 @@
         "label": "US CPSC",
         "count": 55,
         "ok": true,
-        "ms": 17668,
+        "ms": 15967,
         "fetched": 91
       },
       {
@@ -19,7 +19,7 @@
         "label": "Hersteller-Seiten",
         "count": 47,
         "ok": true,
-        "ms": 38164,
+        "ms": 39000,
         "fetched": 49
       },
       {
@@ -27,7 +27,7 @@
         "label": "EU Safety Gate",
         "count": 0,
         "ok": true,
-        "ms": 14717,
+        "ms": 9511,
         "fetched": 0
       }
     ],
